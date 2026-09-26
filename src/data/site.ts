@@ -43,7 +43,7 @@ export const faq = [
   },
   {
     q: 'Jak jste tedy placená?',
-    a: 'Provizí od pojišťovny, banky nebo investiční společnosti, a to jen když si přese mě něco sjednáte. U pojištění a hypoték za to nic navíc neplatíte, cena je stejná jako napřímo. U některých investic je vstupní poplatek a ten vám vždycky řeknu dopředu, v korunách. Přesnou informaci o mé odměně dostanete písemně před podpisem, ukládá mi to zákon.',
+    a: 'Provizí od pojišťovny, banky nebo investiční společnosti, a to jen když si u mě něco sjednáte. U pojištění a hypoték za to nic navíc neplatíte, cena je stejná jako napřímo. U některých investic je vstupní poplatek a ten vám vždycky řeknu dopředu, v korunách. Přesnou informaci o mé odměně dostanete písemně před podpisem, ukládá mi to zákon.',
   },
   {
     q: 'Musím na první schůzce něco podepsat?',
