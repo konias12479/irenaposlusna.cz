@@ -24,7 +24,7 @@
   --radius-lg: 22px;
   --shadow: 0 10px 30px rgba(44, 21, 71, 0.10);
   --shadow-sm: 0 2px 10px rgba(44, 21, 71, 0.08);
-  --max: 1120px;
+  --max: 1240px;
   --gutter: 20px;
 }
 
@@ -43,8 +43,8 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: var(--purple-500); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: var(--purple-700); }
 h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; color: var(--purple-900); margin: 0 0 0.5em; font-weight: 600; }
-h1 { font-size: clamp(2rem, 4.6vw, 3.2rem); letter-spacing: -0.01em; }
-h2 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); }
+h1 { font-size: clamp(2rem, 4.6vw, 3.6rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.6rem, 3.2vw, 2.5rem); }
 h3 { font-size: 1.25rem; }
 p { margin: 0 0 1em; }
 ul, ol { padding-left: 1.3em; margin: 0 0 1em; }
@@ -229,3 +229,19 @@ strong { font-weight: 700; }
 @media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr; gap: 48px; } .two-col--wide { grid-template-columns: 1.3fr 1fr; } }
 .photo-rounded img { border-radius: var(--radius-lg); box-shadow: var(--shadow); }
 .notice { background: var(--orange-100); border-radius: 12px; padding: 14px 18px; font-size: 0.95rem; }
+
+/* ---------- Velké monitory ---------- */
+@media (min-width: 1500px) {
+  :root { --max: 1400px; --gutter: 32px; }
+  body { font-size: 19px; }
+  .hero__photo { max-width: 520px; }
+  .hero__grid { gap: 72px; }
+  .lead { font-size: 1.25rem; }
+  .btn--lg { font-size: 1.15rem; }
+  .trustbar strong { font-size: 1.6rem; }
+}
+@media (min-width: 1900px) {
+  :root { --max: 1560px; }
+  body { font-size: 20px; }
+  .hero__photo { max-width: 580px; }
+}
