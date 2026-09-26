@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+<Base title="Právní informace | Irena Poslušná, finanční poradkyně" description="Informace o postavení vázané zástupkyně, registraci u ČNB, odměně a možnosti podat stížnost." noindex={true}>
+  <section class="section section--white">
+    <div class="container prose">
+      <h1>Právní informace</h1>
+      <p class="article-meta">Znění bude doplněno podle podkladů compliance {site.company}.</p>
+
+      <h2>Kdo jsem</h2>
+      <p>Irena Poslušná{site.ico ? `, IČO ${site.ico}` : ''}, vázaná zástupkyně společnosti {site.companyLegal}, se sídlem {site.officeStreet}, {site.officeCity}. Společnost eDO je samostatným zprostředkovatelem pojištění, spotřebitelského úvěru a investičním zprostředkovatelem s oprávněním České národní banky. Jako vázaná zástupkyně jednám jménem a na účet této společnosti.</p>
+      <p>Zápis v registru České národní banky si můžete ověřit v <a href={site.cnbRegistryUrl} rel="noopener" target="_blank">seznamu regulovaných a registrovaných subjektů ČNB</a> podle jména{site.cnbNumber ? ` nebo evidenčního čísla ${site.cnbNumber}` : ''}.</p>
+
+      <h2>Jaké služby poskytuji</h2>
+      <p>Zprostředkování pojištění (životní, úrazové, majetkové a odpovědnostní), zprostředkování spotřebitelských úvěrů včetně hypotečních, zprostředkování investic a doplňkového penzijního spoření. Poskytuji rady na základě analýzy vaší situace a porovnání produktů finančních institucí, se kterými společnost eDO spolupracuje. Nejsem nezávislým poradcem ve smyslu zákona.</p>
+
+      <h2>Odměna</h2>
+      <p>Za zprostředkování dostávám odměnu (provizi) od finanční instituce, jejíž produkt si sjednáte. Konzultace a analýzu vám neúčtuji. Před uzavřením každé smlouvy dostanete písemně informace o povaze odměny v rozsahu, který vyžaduje zákon č. 170/2018 Sb. o distribuci pojištění a zajištění a zákon č. 257/2016 Sb. o spotřebitelském úvěru.</p>
+
+      <h2>Stížnosti a mimosoudní řešení sporů</h2>
+      <p>Stížnost můžete podat písemně na <a href={`mailto:${site.email}`}>{site.email}</a> nebo přímo společnosti {site.company}. Dohled nad činností vykonává Česká národní banka, Na Příkopě 28, 115 03 Praha 1. Spory z pojištění a úvěrů lze mimosoudně řešit u finančního arbitra (<a href="https://finarbitr.cz" rel="noopener" target="_blank">finarbitr.cz</a>), spory z neživotního pojištění u České obchodní inspekce nebo Kanceláře ombudsmana České asociace pojišťoven.</p>
+
+      <h2>Upozornění k investicím</h2>
+      <p>Investování s sebou nese riziko. Hodnota investice může kolísat a není zaručena návratnost investované částky. Minulé výnosy nejsou zárukou výnosů budoucích.</p>
+    </div>
+  </section>
+</Base>

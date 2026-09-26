@@ -1,0 +1,168 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import Faq from '../components/Faq.astro';
+import Steps from '../components/Steps.astro';
+import { site, faq } from '../data/site';
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.slice(0, 4).map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+<Base
+  title="Irena Poslušná – finanční poradkyně Praha | pojištění rodin, revize smluv"
+  description="Finanční poradkyně pro rodiny s dětmi v Praze. Revize pojistných smluv, životní pojištění, hypotéky, investice a penze. 10 let praxe, první schůzka bez poplatku, osobně i online."
+  jsonLd={faqLd}
+>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">Finanční poradkyně pro rodiny · Praha a okolí</span>
+        <h1>Zjistím, jestli vás vaše pojistky opravdu chrání a za co zbytečně platíte</h1>
+        <p class="lead">Jsem Irena Poslušná, finanční poradkyně s více než {site.yearsExperience} lety praxe. Projdu s vámi pojistky, úspory i hypotéku a na rovinu řeknu, co funguje a co ne. Osobně v Praze nebo online.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
+          <a class="btn btn--secondary btn--lg" href="/revize-pojisteni/">Chci zkontrolovat pojistky</a>
+        </div>
+        <p class="microcopy">První schůzka je bez poplatku a k ničemu vás nezavazuje. <a href="/kontakt/#faq">Kde je háček?</a></p>
+      </div>
+      <div class="hero__photo">
+        <picture>
+          <source srcset="/img/irena-poslusna-portret-800.webp 800w, /img/irena-poslusna-portret-1200.webp 1200w" sizes="(min-width: 900px) 420px, 90vw" type="image/webp" />
+          <img src="/img/irena-poslusna-portret-800.jpg" width="800" height="1200" alt="Irena Poslušná, finanční poradkyně Praha" fetchpriority="high" />
+        </picture>
+        <div class="hero__badge"><strong>Irena Poslušná</strong>finanční poradkyně · máma dvou dětí</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="section--tight">
+    <div class="container trustbar">
+      <div><strong>{site.yearsExperience}+ let</strong><span>praxe v pojištění a financích</span></div>
+      <div><strong>Tisíce</strong><span>klientů v Praze a okolí</span></div>
+      <div><strong>0 Kč</strong><span>za konzultaci i revizi smluv</span></div>
+      <div><strong>ČNB</strong><span>zapsaná v registru, ověřitelné</span></div>
+    </div>
+  </section>
+
+  <!-- PROBLÉM -->
+  <section class="section section--white">
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Poznáváte se v tom?</span>
+        <h2>Většina rodin pojistky má. Jen neví, jestli by je v nejhorší chvíli podržely.</h2>
+        <ul class="checklist">
+          <li>Pojistku máte z doby, kdy jste ještě neměli děti nebo hypotéku, a od té doby jste ji neotevřeli.</li>
+          <li>Nevíte, z čeho byste platili hypotéku, kdybyste půl roku nemohli pracovat.</li>
+          <li>Platíte každý měsíc několik smluv a nejste si jistí, co vlastně kryjí.</li>
+          <li>Peníze leží na účtu a víte, že je inflace ukusuje, ale nevíte, kde začít.</li>
+        </ul>
+        <p>Tohle slyším od klientů nejčastěji. Dobrá zpráva: většinou to jde dát do pořádku během jedné až dvou schůzek.</p>
+      </div>
+      <div class="card card--accent">
+        <h3>Co se stane, když se nic nestane?</h3>
+        <p>Budete 20 let v klidu platit za pojistku, o které víte, že dává smysl. To je celý cíl.</p>
+        <p>Nejčastěji při kontrole nenajdu chybějící pojistku. Najdu pojistku, která platí za drobnosti a na to hlavní, invaliditu nebo dlouhou nemoc, má částku, ze které by rodina vyžila pár měsíců.</p>
+        <p class="small muted" style="margin:0">Stávající smlouvy nemusíte rušit. Často stačí upravit částky nebo vyškrtnout zbytečná připojištění. Novou smlouvu doporučím jen tehdy, když to pro vás vyjde jasně lépe, a řeknu vám proč.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLUŽBY: 3 dveře -->
+  <section class="section section--tint">
+    <div class="container">
+      <span class="eyebrow">S čím vám pomůžu</span>
+      <h2>Tři nejčastější věci, se kterými za mnou rodiny chodí</h2>
+      <div class="grid grid--3" style="margin-top:28px">
+        <div class="card card--featured">
+          <span class="tag">Začněte tady</span>
+          <h3>Pojištění rodiny a kontrola smluv</h3>
+          <p>Přinesete nebo vyfotíte smlouvy, které máte doma. Projdu je bod po bodu a řeknu vám, kde jste podpojištění, kde platíte zbytečně a co je v pořádku. Když je smlouva dobrá, řeknu vám to i tak.</p>
+          <a class="btn btn--primary" href="/revize-pojisteni/">Jak revize probíhá</a>
+        </div>
+        <div class="card">
+          <h3>Bydlení a hypotéka</h3>
+          <p>Porovnám nabídky více bank a pohlídám konec fixace. Pomáhám i tam, kde to na pobočce nejde hladce: s nepravidelnými příjmy, OSVČ nebo složitějším financováním.</p>
+          <a class="btn btn--secondary" href="/sluzby/#hypoteky">Víc o hypotékách</a>
+        </div>
+        <div class="card">
+          <h3>Spoření, investice a penze</h3>
+          <p>Nastavíme pravidelné spoření nebo investici podle toho, na co a na jak dlouho spoříte. U každého návrhu vám dopředu řeknu, co stojí a jaké má riziko.</p>
+          <a class="btn btn--secondary" href="/sluzby/#investice">Víc o investicích</a>
+        </div>
+      </div>
+      <p class="center" style="margin-top:26px"><strong>Nevíte, kde začít?</strong> Začněte kontrolou pojistek. Tam většinou najdu nejvíc. <a href="/sluzby/">Všechny služby →</a></p>
+    </div>
+  </section>
+
+  <!-- PRO KOHO -->
+  <section class="section section--white">
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Pro koho</span>
+        <h2>S kým nejčastěji pracuji</h2>
+        <p>Nejčastěji pomáhám <strong>rodinám s dětmi</strong>: se zajištěním pro případ nemoci nebo úrazu, s hypotékou a se spořením pro děti. Obracejí se na mě ale i <strong>OSVČ</strong> s nepravidelnými příjmy, kterým banka na pobočce nerozumí, a <strong>lidé před důchodem nebo v důchodu</strong>, kteří řeší penzi, úspory a pojištění domu.</p>
+        <p>Sama mám manžela a děti, takže vím, jak moc záleží na tom, aby se rodina nepoložila, když něco nevyjde. A vím, že na papíry od pojišťovny se dostane až v deset večer, když vůbec. Proto se snažím, aby vám spolupráce se mnou zabrala co nejmíň času.</p>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>Co ode mě nečekejte</h3>
+          <ul style="margin:0">
+            <li>Opakované volání a naléhání.</li>
+            <li>Tlak na podpis na první schůzce.</li>
+            <li>Rušení fungujících smluv jen kvůli výměně.</li>
+            <li>Žádosti o peníze na můj účet. Platby jdou vždy přímo pojišťovně nebo bance.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Se mnou spolupracovat nebudete, pokud…</h3>
+          <p style="margin:0">…hledáte nejlevnější pojistku bez ohledu na to, co kryje, nebo tip na rychlé zbohatnutí. To vám nabídnout neumím a nechci.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAK TO PROBÍHÁ -->
+  <section class="section section--tint">
+    <div class="container">
+      <span class="eyebrow">Jak spolupráce probíhá</span>
+      <h2>Čtyři kroky, žádné překvapení</h2>
+      <div style="margin-top:24px"><Steps /></div>
+    </div>
+  </section>
+
+  <!-- JAK JSEM PLACENÁ -->
+  <section class="section section--white">
+    <div class="container two-col two-col--wide">
+      <div>
+        <span class="eyebrow">Kolik vás to bude stát</span>
+        <h2>Jak jsem placená</h2>
+        <p>Úvodní telefonát ani kontrola vašich pojistek vás nic nestojí. Jsem vázaná zástupkyně společnosti {site.company} a odměnu (provizi) mi platí pojišťovna, banka nebo investiční společnost, a to jen tehdy, když si u mě smlouvu opravdu sjednáte. Odměna je už v ceně smlouvy, nic navíc mi neplatíte a u pojišťovny napřímo byste platili totéž.</p>
+        <p>Píšu to otevřeně, protože vím, že právě kvůli provizím lidé poradcům nevěří. Co to pro vás znamená v praxi: když zjistím, že vaše smlouvy jsou v pořádku, řeknu vám to, i když na tom nic nevydělám. U životního pojištění musím odměnu vracet, pokud smlouva brzy skončí, takže mám zájem na smlouvě, která vám bude sedět roky, ne na rychlém podpisu.</p>
+        <p style="margin:0">Doporučení dostanete vždy písemně a v klidu si ho rozmyslíte doma. A když řeknete „ne, děkuji", je to naprosto v pořádku.</p>
+      </div>
+      <div class="photo-rounded">
+        <picture>
+          <source srcset="/img/irena-poslusna-konzultace-1200.webp" type="image/webp" />
+          <img src="/img/irena-poslusna-konzultace-1200.jpg" width="1200" height="800" alt="Irena Poslušná při práci s klientskými smlouvami" loading="lazy" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tint">
+    <div class="container">
+      <span class="eyebrow">Časté otázky</span>
+      <h2>Na co se lidé ptají, než zavolají</h2>
+      <div style="margin-top:20px; max-width:820px"><Faq limit={4} /></div>
+      <p style="margin-top:16px"><a href="/kontakt/#faq">Všechny otázky a odpovědi →</a></p>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

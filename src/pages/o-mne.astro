@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import { site } from '../data/site';
+---
+<Base
+  title="O mně – Irena Poslušná, finanční poradkyně Praha | 10 let praxe"
+  description="Jsem Irena Poslušná, finanční poradkyně v Praze. Přes 10 let praxe (Allianz, nyní eDO Finance&Reality), specializace na pojištění rodin. Nejdřív naslouchám, pak navrhuji řešení. Sama mám manžela a děti."
+>
+  <section class="section section--white">
+    <div class="container two-col two-col--wide">
+      <div>
+        <span class="eyebrow">O mně</span>
+        <h1>Irena Poslušná, finanční poradkyně</h1>
+        <p class="lead">Jmenuji se Irena Poslušná a financím se profesionálně věnuji přes {site.yearsExperience} let, nejdřív v Allianz, nyní jako vázaná zástupkyně {site.company}. Specializuji se na pojištění, dále pomáhám s investicemi, hypotékami a penzijními produkty. Pracuji s klienty v Praze a okolí, osobně i online.</p>
+        <p>Vím, že finance dokážou být nepřehledné a plné odborných pojmů, kterým běžný člověk nerozumí, a přesně proto svou práci dělám. Mým cílem je, abyste po naší schůzce odcházeli s jasnou představou o tom, co a proč děláte se svými penězi.</p>
+        <p>Můj přístup je jednoduchý: <strong>nejdřív naslouchám, teprve pak navrhuji řešení.</strong> Vysvětluji srozumitelně, bez zbytečného žargonu. Porovnávám nabídky pojišťoven, bank a investičních společností, se kterými přes eDO spolupracuji. A jsem tu pro vás i po podpisu smlouvy, dlouhodobě.</p>
+        <p>Sama mám manžela a děti, a tak dobře vím, co znamená mít rodinné finance v pořádku: aby bylo z čeho platit bydlení, aby byly děti zajištěné a aby se rodina nepoložila, když někdo vypadne z práce. Právě proto pomáhám nejčastěji rodinám s dětmi.</p>
+        <p>Ano, smlouvy sjednávám a je to moje práce. Proto platí jednoduché pravidlo: když vaše stávající smlouva dává smysl, řeknu vám, ať si ji necháte.</p>
+        <p style="margin:0">Díky dlouhodobé podpoře manžela jsem si mohla tuto práci vybrat a dělat ji naplno. Za to jsem mu vděčná.</p>
+      </div>
+      <div>
+        <div class="photo-rounded" style="margin-bottom:20px">
+          <picture>
+            <source srcset="/img/irena-poslusna-portret-800.webp" type="image/webp" />
+            <img src="/img/irena-poslusna-portret-800.jpg" width="800" height="1200" alt="Irena Poslušná, finanční poradkyně Praha" fetchpriority="high" />
+          </picture>
+        </div>
+        <div class="card">
+          <h3>V kostce</h3>
+          <ul style="margin:0">
+            <li>Přes {site.yearsExperience} let v pojištění a financích (Allianz, nyní eDO Finance&Reality).</li>
+            <li>Tisíce klientů v Praze a okolí, nejčastěji rodiny s dětmi.</li>
+            <li>Vázaná zástupkyně {site.company}, <a href={site.cnbRegistryUrl} target="_blank" rel="noopener">zapsaná v registru ČNB</a>.</li>
+            <li>Schůzky u vás doma, v kanceláři v Praze 4 nebo online, i navečer.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <span class="eyebrow">Můj slib vám</span>
+      <h2>Pět věcí, na které se u mě můžete spolehnout</h2>
+      <div class="grid grid--2" style="margin-top:20px">
+        <div class="card"><h3>1. Nejdřív se ptám a poslouchám</h3><p style="margin:0">Teprve pak doporučuji. Nejdřív se bavíme o vás, ne o produktech.</p></div>
+        <div class="card"><h3>2. Když je smlouva dobrá, řeknu vám to</h3><p style="margin:0">I když na tom nic nevydělám.</p></div>
+        <div class="card"><h3>3. Nic nerušíme naslepo</h3><p style="margin:0">Nikdy nedoporučím zrušit smlouvu, dokud přesně nevíte, o co byste přišli.</p></div>
+        <div class="card"><h3>4. Na podpis nespěchám</h3><p style="margin:0">Návrh si vezmete domů a promyslíte. „Ne" je v pořádku.</p></div>
+        <div class="card"><h3>5. Otevřeně řeknu, jak jsem placená</h3><p style="margin:0">Provizí od instituce, jen když si něco sjednáte. <a href="/kontakt/#faq">Podrobně v častých otázkách.</a></p></div>
+        <div class="card card--accent"><h3>Chcete si mě ověřit?</h3><p style="margin:0">Každý zprostředkovatel pojištění musí být v registru České národní banky. <a href={site.cnbRegistryUrl} target="_blank" rel="noopener">Vyhledejte mě podle jména v registru ČNB.</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

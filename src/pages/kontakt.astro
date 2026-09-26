@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import Faq from '../components/Faq.astro';
+import Steps from '../components/Steps.astro';
+import { site, faq } from '../data/site';
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const formAction = site.formspreeId ? `https://formspree.io/f/${site.formspreeId}` : `mailto:${site.email}`;
+const formMethod = site.formspreeId ? 'POST' : 'GET';
+---
+<Base
+  title="Kontakt – Irena Poslušná, finanční poradkyně Praha | nezávazná konzultace"
+  description="Domluvte si první schůzku bez poplatku: osobně v Praze, u vás doma nebo online. Telefon 721 551 651, e-mail irena.poslusna@edofinance.cz. Ozvu se do 24 hodin v pracovní dny."
+  jsonLd={faqLd}
+>
+  <section class="section section--white">
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Kontakt</span>
+        <h1>Ozvěte se, první schůzka je bez poplatku</h1>
+        <p class="lead">Stačí napsat jednou větou, co řešíte. Ozvu se {site.responseTime}.</p>
+
+        <div class="contact-box">
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+            <div><a href={`tel:${site.phoneIntl}`}>{site.phoneDisplay}</a><br /><span class="small muted">Když nezvednu, jsem na schůzce. Zavolám zpět.</span></div>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            <div><a href={`mailto:${site.email}`}>{site.email}</a></div>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <div>
+              <strong>Kde se sejdeme</strong><br />
+              U vás doma, online přes videohovor, nebo v kanceláři: {site.officeName}, {site.officeStreet}, {site.officeCity} ({site.officeNote}).
+            </div>
+          </div>
+          <div class="btn-row" style="margin-top:8px">
+            <a class="btn btn--primary" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
+            <a class="btn btn--secondary" href={`mailto:${site.email}?subject=${encodeURIComponent('Dotaz z webu')}`}>Napsat e-mail</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2 style="font-size:1.5rem">Napište mi, s čím potřebujete pomoct</h2>
+          <form class="form" action={formAction} method={formMethod} enctype={site.formspreeId ? undefined : 'text/plain'}>
+            <div>
+              <label for="jmeno">Jméno</label>
+              <input id="jmeno" name="Jméno" type="text" required autocomplete="name" />
+            </div>
+            <div>
+              <label for="kontakt">Telefon nebo e-mail</label>
+              <input id="kontakt" name="Kontakt" type="text" required autocomplete="tel" />
+            </div>
+            <div>
+              <label for="tema">S čím potřebujete pomoct?</label>
+              <select id="tema" name="Téma">
+                <option>Revize pojištění</option>
+                <option>Životní nebo úrazové pojištění</option>
+                <option>Pojištění domácnosti / nemovitosti</option>
+                <option>Hypotéka nebo konec fixace</option>
+                <option>Investice nebo spoření pro děti</option>
+                <option>Penze</option>
+                <option>Nevím, chci poradit</option>
+              </select>
+            </div>
+            <div>
+              <label for="zprava">Zpráva (nepovinné)</label>
+              <textarea id="zprava" name="Zpráva" placeholder="Např. Máme dvě starší životní pojistky a hypotéku, chceme vědět, jestli jsme dobře pojištění."></textarea>
+            </div>
+            {site.formspreeId && <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />}
+            {site.formspreeId && <input type="hidden" name="_subject" value="Nová poptávka z irenaposlusna.cz" />}
+            {site.formspreeId && <input type="hidden" name="_next" value={`${site.domain}/dekuji/`} />}
+            <button class="btn btn--primary btn--lg" type="submit">Odeslat, ozvu se do 24 h</button>
+            <p class="form__consent" style="margin:0">Odesláním souhlasíte se zpracováním údajů za účelem vyřízení vaší poptávky. <a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a>.</p>
+          </form>
+        </div>
+        <div class="notice" style="margin-top:16px">
+          <strong>Co se stane po odeslání:</strong> {site.responseTime} vám zavolám z čísla {site.phoneDisplay}. Domluvíme se na 15 minutách, nic nepodepisujete a nic nechystáte. Vaše údaje nikomu nepředávám.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <span class="eyebrow">Jak to probíhá</span>
+      <h2>Od první zprávy ke schůzce</h2>
+      <div style="margin-top:24px"><Steps /></div>
+    </div>
+  </section>
+
+  <section class="section section--white" id="faq">
+    <div class="container" style="max-width:860px">
+      <span class="eyebrow">Časté otázky</span>
+      <h2>Na co se lidé ptají, než zavolají</h2>
+      <div style="margin-top:20px"><Faq /></div>
+    </div>
+  </section>
+</Base>

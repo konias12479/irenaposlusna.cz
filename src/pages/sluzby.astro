@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import { site } from '../data/site';
+---
+<Base
+  title="Služby – pojištění, hypotéky, investice, penze | Irena Poslušná, finanční poradkyně Praha"
+  description="Finanční poradenství pro rodiny v Praze: revize pojistných smluv, životní a majetkové pojištění, hypotéky a refinancování, investice, spoření pro děti a penzijní spoření. Srozumitelně, bez žargonu."
+>
+  <section class="section section--white">
+    <div class="container">
+      <span class="eyebrow">Služby</span>
+      <h1>Finanční poradenství Praha: pojištění, hypotéky, investice a penze</h1>
+      <p class="lead" style="max-width:760px">Finance nejsou jeden produkt. Je to pojištění, úspory, bydlení a plán na stáří dohromady. Podívám se na váš celkový obraz a ukážu vám, kde máte mezery a kde naopak platíte za něco, co nepotřebujete. Nemusíte vědět, čím začít. Většinou začínáme kontrolou pojistek a zbytek vyplyne.</p>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="pojisteni">
+    <div class="container two-col two-col--wide">
+      <div>
+        <span class="tag">Hlavní obor</span>
+        <h2 style="margin-top:12px">Pojištění a revize smluv</h2>
+        <p>Většinu let praxe jsem strávila právě u pojištění a vídám pořád stejnou věc. Lidé mají smlouvy, které platí, aniž by věděli, co přesně kryjí. Projdeme vaše pojistky bod po bodu a nastavíme ochranu, která skutečně odpovídá vaší situaci, ne šabloně z formuláře.</p>
+        <ul class="checklist">
+          <li><strong>Životní pojištění</strong> pro rodiče: smrt, invalidita, pracovní neschopnost, vážné nemoci. Částky podle hypotéky a příjmu, ne podle tabulky.</li>
+          <li><strong>Úrazové pojištění dětí</strong>: trvalé následky s progresí, hospitalizace, bez zbytečných doplňků.</li>
+          <li><strong>Pojištění domácnosti a nemovitosti</strong>: kontrola podpojištění (7 z 10 domů v ČR je podpojištěných), odpovědnost za škodu.</li>
+          <li><strong>Revize stávajících smluv</strong>: přineste mi vaše smlouvy, co vám doma leží roky, a společně zjistíme, jestli vás skutečně chrání, nebo jestli platíte za něco, co nemá smysl. Když je smlouva dobrá, řeknu vám to.</li>
+          <li><strong>Pomoc s pojistnou událostí</strong>: když se něco stane, pomůžu s hlášením a komunikací s pojišťovnou.</li>
+        </ul>
+        <a class="btn btn--primary" href="/revize-pojisteni/">Jak probíhá revize pojistek</a>
+      </div>
+      <div class="photo-rounded">
+        <picture>
+          <source srcset="/img/irena-poslusna-konzultace-1200.webp" type="image/webp" />
+          <img src="/img/irena-poslusna-konzultace-1200.jpg" width="1200" height="800" alt="Irena Poslušná při konzultaci nad pojistnými smlouvami" loading="lazy" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" id="hypoteky">
+    <div class="container">
+      <div class="grid grid--2">
+        <div class="card">
+          <h2 style="font-size:1.6rem">Hypotéky a refinancování</h2>
+          <p>Porovnám nabídky více bank za vás a vyjednám podmínky, na které byste sami nejspíš nedosáhli. Pohlídám konec fixace: řešit ho má smysl 3 až 6 měsíců předem, než vám banka pošle svoji nabídku.</p>
+          <ul>
+            <li>Nová hypotéka na byt nebo dům, včetně nastavení pojištění k úvěru.</li>
+            <li>Refinancování a konec fixace.</li>
+            <li><strong>Nestandardní příjmy?</strong> OSVČ, kombinované příjmy, složitější financování. Vím, jak která banka počítá příjem.</li>
+            <li>Pojištění nemovitosti k předání klíčů do 24 hodin.</li>
+          </ul>
+        </div>
+        <div class="card" id="investice">
+          <h2 style="font-size:1.6rem">Investice a spoření pro děti</h2>
+          <p>Zhodnocení úspor nemusí být komplikované ani rizikové. Probereme, kolik peněz chcete mít po ruce, jaký časový horizont máte a s jakou mírou rizika jste v klidu, a podle toho najdeme řešení.</p>
+          <ul>
+            <li>Finanční rezerva rodiny: kolik a kde ji držet.</li>
+            <li>Pravidelné investování od 500 Kč měsíčně.</li>
+            <li>Spoření pro děti: co dává smysl místo stavebního spoření.</li>
+            <li>U každého návrhu vám dopředu řeknu poplatky v korunách a jaké má riziko.</li>
+          </ul>
+          <p class="small muted" style="margin:0">Investice nesou riziko. Minulé výnosy nezaručují budoucí.</p>
+        </div>
+        <div class="card" id="penze">
+          <h2 style="font-size:1.6rem">Penze a dlouhodobé spoření</h2>
+          <p>Čím dřív začnete řešit stáří, tím míň to bolí peněženku. Poradím, jak si nastavit spoření tak, aby vám dávalo klid a využilo státní příspěvek i daňové výhody.</p>
+          <ul>
+            <li>Doplňkové penzijní spoření a převod z transformovaného fondu.</li>
+            <li>Dlouhodobý investiční produkt (DIP): pro koho se hodí a pro koho ne.</li>
+            <li>Příspěvek zaměstnavatele a daňový odpočet.</li>
+          </ul>
+        </div>
+        <div class="card" id="komplexni">
+          <h2 style="font-size:1.6rem">Komplexní poradenství pro rodinu</h2>
+          <p>Když chcete mít pořádek ve všem najednou. Dvě schůzky: revize pojištění, rezerva, bydlení, děti, penze. Dostanete písemný plán, co řešit teď, co za rok a co nechat být.</p>
+          <p style="margin:0">Hodí se hlavně po narození dítěte, při koupi bydlení nebo když se v rodině změní příjmy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container two-col">
+      <div>
+        <h2>Nevíte, kde přesně začít?</h2>
+        <p>Tohle zažívá spousta lidí. Většinou přijdou s nějakým konkrétním tématem, nové auto, pojištění, hypotéka, investice, jen si nejsou jistí, co řešit jako první a jak to celé poskládat. A přesně od toho tu jsem. Sedneme si, projdeme vaši situaci, aby vám všechno dávalo smysl a měli jste v tom pořádek.</p>
+        <p style="margin:0"><a href="/o-mne/">Kdo jsem a jak pracuji →</a></p>
+      </div>
+      <div class="card card--accent">
+        <h3>První schůzka je bez poplatku</h3>
+        <p>Trvá zhruba hodinu, u vás doma, v kanceláři v Praze 4 nebo online. Nic nepodepisujete.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
+          <a class="btn btn--secondary" href="/kontakt/">Napsat</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dekuji/
+
+Sitemap: https://irenaposlusna.cz/sitemap-index.xml

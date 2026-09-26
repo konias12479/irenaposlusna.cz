@@ -1,0 +1,93 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  jsonLd?: object | object[];
+  noindex?: boolean;
+}
+const { title, description, ogImage = '/img/og-image.jpg', jsonLd, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogUrl = new URL(ogImage, Astro.site).href;
+
+const baseLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${site.domain}/#person`,
+    name: 'Irena Poslušná',
+    jobTitle: 'Finanční poradkyně',
+    description: 'Finanční poradkyně v Praze se zaměřením na pojištění rodin, revize pojistných smluv, hypotéky, investice a penzijní spoření.',
+    url: site.domain,
+    image: `${site.domain}/img/irena-poslusna-portret-800.jpg`,
+    telephone: site.phoneIntl,
+    email: site.email,
+    worksFor: { '@type': 'Organization', name: site.company, url: 'https://www.edogroup.cz/cz/finance' },
+    knowsAbout: ['životní pojištění', 'revize pojistných smluv', 'pojištění majetku', 'hypotéky', 'investice', 'penzijní spoření'],
+    areaServed: site.areaServed,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FinancialService',
+    '@id': `${site.domain}/#business`,
+    name: 'Irena Poslušná – finanční poradkyně',
+    url: site.domain,
+    telephone: site.phoneIntl,
+    email: site.email,
+    image: `${site.domain}/img/og-image.jpg`,
+    priceRange: 'Konzultace bez poplatku',
+    address: { '@type': 'PostalAddress', streetAddress: site.officeStreet, addressLocality: 'Praha', postalCode: '148 00', addressCountry: 'CZ' },
+    areaServed: [{ '@type': 'City', name: 'Praha' }, { '@type': 'AdministrativeArea', name: 'Středočeský kraj' }],
+    founder: { '@id': `${site.domain}/#person` },
+    parentOrganization: { '@type': 'Organization', name: site.company },
+  },
+];
+const ld = jsonLd ? [...baseLd, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])] : baseLd;
+---
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <meta name="theme-color" content="#5d2e89" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:site_name" content={site.title} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogUrl} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Přeskočit na obsah</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <a class="call-fab" href={`tel:${site.phoneIntl}`} aria-label={`Zavolat Ireně ${site.phoneDisplay}`}>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+      Zavolat Ireně · {site.phoneDisplay}
+    </a>
+  </body>
+</html>

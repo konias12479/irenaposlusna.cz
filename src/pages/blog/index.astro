@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base
+  title="Blog – pojištění, hypotéky, investice bez žargonu | Irena Poslušná"
+  description="Praktické články o rodinných financích: jak často dělat revizi pojištění, jaké pojištění potřebuje rodina s dětmi, co dělat před koncem fixace hypotéky."
+>
+  <section class="section section--white">
+    <div class="container">
+      <span class="eyebrow">Blog</span>
+      <h1>Rodinné finance bez žargonu</h1>
+      <p class="lead" style="max-width:720px">Odpovědi na otázky, které mi klienti kladou nejčastěji. Krátce, prakticky a bez odborných pojmů.</p>
+      <div class="grid grid--2" style="margin-top:28px">
+        {posts.map((p) => (
+          <a class="card post-card" href={`/blog/${p.id}/`}>
+            <p class="article-meta" style="margin-bottom:8px">{fmt(p.data.date)}</p>
+            <h3>{p.data.title}</h3>
+            <p class="muted" style="margin:0">{p.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <Cta />
+</Base>

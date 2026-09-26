@@ -1,0 +1,27 @@
+---
+interface Props { compact?: boolean; }
+const { compact = false } = Astro.props;
+---
+<div class="steps steps--4">
+  <div class="step">
+    <h3>Zavoláte nebo napíšete</h3>
+    <p>Řeknete mi, co řešíte, klidně jen jednou větou. Domluvíme termín a místo: u vás, v Praze 4, nebo online. Zabere to 5 minut.</p>
+  </div>
+  <div class="step">
+    <h3>První schůzka bez poplatku</h3>
+    <p>Asi hodina. Povídáme si o vás: rodina, práce, bydlení, plány. Projdu smlouvy, které už máte. Stačí je vzít s sebou nebo mi je předem vyfotit. Nic nepodepisujete.</p>
+  </div>
+  <div class="step">
+    <h3>Návrh, který si promyslíte</h3>
+    <p>Připravím konkrétní doporučení: co nechat, co upravit a co případně přidat, včetně toho, kolik to stojí. Rozhodnete se sami, klidně až za týden.</p>
+  </div>
+  <div class="step">
+    <h3>Jsem tu i potom</h3>
+    <p>Když se změní život (dítě, stěhování, nová práce), ozvěte se a smlouvy upravíme. Jednou ročně se vám sama připomenu s krátkou kontrolou.</p>
+  </div>
+</div>
+{!compact && (
+  <div class="notice" style="margin-top:20px">
+    <strong>Co se hodí mít na první schůzku:</strong> pojistné smlouvy nebo aspoň jejich čísla · výpis ze stavebního nebo penzijního spoření · hypoteční smlouvu s datem konce fixace · přibližnou představu o měsíčních příjmech a výdajích. Nic nemáte po ruce? Nevadí, dohledáme to spolu.
+  </div>
+)}

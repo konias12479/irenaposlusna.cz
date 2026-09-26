@@ -1,0 +1,36 @@
+---
+import { site, nav } from '../data/site';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>Irena Poslušná</h4>
+        <p>Finanční poradkyně pro rodiny s dětmi. Pojištění, revize smluv, hypotéky, investice a penze. Praha a okolí, osobně i online.</p>
+        <p>
+          <a href={`tel:${site.phoneIntl}`}>{site.phoneDisplay}</a><br />
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </p>
+      </div>
+      <div>
+        <h4>Stránky</h4>
+        <ul>
+          {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <h4>Právní informace</h4>
+        <ul>
+          <li><a href="/pravni-informace/">Právní informace</a></li>
+          <li><a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a></li>
+          <li><a href={site.cnbRegistryUrl} rel="noopener" target="_blank">Ověřit v registru ČNB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      Irena Poslušná{site.ico ? `, IČO ${site.ico}` : ''} · vázaná zástupkyně společnosti {site.company}{site.cnbNumber ? ` · registrace ČNB č. ${site.cnbNumber}` : ' · zapsaná v registru ČNB'} · {site.officeStreet}, {site.officeCity}.
+      Tento web nepoužívá sledovací cookies. © {year}
+    </div>
+  </div>
+</footer>

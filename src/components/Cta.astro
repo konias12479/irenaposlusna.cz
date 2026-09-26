@@ -1,0 +1,29 @@
+---
+import { site } from '../data/site';
+interface Props { title?: string; text?: string; }
+const {
+  title = 'Stačí jeden telefonát',
+  text = 'Zavolejte mi nebo napište, s čím potřebujete pomoct. Domluvíme se, jestli se sejdeme u vás, v Praze 4 nebo online. První schůzka je bez poplatku a nic na ní nepodepisujete.',
+} = Astro.props;
+---
+<section class="section section--purple">
+  <div class="container">
+    <div class="two-col two-col--wide" style="align-items:center">
+      <div>
+        <h2>{title}</h2>
+        <p class="lead" style="color:#e6dbf2">{text}</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
+          <a class="btn btn--ghost-light" href="/kontakt/">Napsat zprávu</a>
+        </div>
+        <p class="microcopy">Ozvu se {site.responseTime}. Nic nepodepisujete, nic nechystáte.</p>
+      </div>
+      <div class="photo-rounded" style="max-width:340px;justify-self:center">
+        <picture>
+          <source srcset="/img/irena-poslusna-portret-800.webp" type="image/webp" />
+          <img src="/img/irena-poslusna-portret-800.jpg" width="800" height="1200" alt="Irena Poslušná, finanční poradkyně Praha" loading="lazy" style="aspect-ratio:4/5;object-fit:cover;object-position:top" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
