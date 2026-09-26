@@ -50,5 +50,5 @@ Web záměrně nemá cookies ani Google Analytics (bez souhlasové lišty). Pro 
 ## Poznámky k obsahu
 
 - Články na blogu jsou návrhy k odsouhlasení Irenou, před zveřejněním zkontrolovat fakta (částky, lhůty).
-- Formulace „tisícům klientů" ponechána na přání Petra (26. 9. 2026).
+- Počet klientů: „stovky" (rozhodnutí Petra 26. 9. 2026).
 - Slovo „nezávislá" se na webu záměrně nepoužívá (vázaná zástupkyně).
