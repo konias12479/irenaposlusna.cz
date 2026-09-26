@@ -234,7 +234,7 @@ strong { font-weight: 700; }
 @media (min-width: 1500px) {
   :root { --max: 1400px; --gutter: 32px; }
   body { font-size: 19px; }
-  .hero__photo { max-width: 520px; }
+  .hero__photo { max-width: 460px; }
   .hero__grid { gap: 72px; }
   .lead { font-size: 1.25rem; }
   .btn--lg { font-size: 1.15rem; }
@@ -243,5 +243,5 @@ strong { font-weight: 700; }
 @media (min-width: 1900px) {
   :root { --max: 1560px; }
   body { font-size: 20px; }
-  .hero__photo { max-width: 580px; }
+  .hero__photo { max-width: 500px; }
 }
