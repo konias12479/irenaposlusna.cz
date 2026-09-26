@@ -15,7 +15,7 @@ Revizi pojištění dělejte **jednou za rok** a navíc **vždy, když se v rodi
 Tyhle situace mění, kolik a jaké krytí potřebujete:
 
 - **Narodilo se dítě.** Najednou je na vašem příjmu závislý někdo další. Částky pro případ invalidity a smrti, které stačily pro jednoho, už nestačí.
-- **Berete hypotéku nebo se stěhujete.** Pojištění k úvěru, které nabídne banka, bývá drahé a kryje hlavně banku. Zároveň musí sedět pojištění nemovitosti a domácnosti.
+- **Přemýšlíte o hypotéce nebo se stěhujete.** Pojištění k úvěru, které nabídne banka, bývá drahé a kryje hlavně banku. Zároveň musí sedět pojištění nemovitosti a domácnosti.
 - **Změnil se příjem.** Nová práce, přechod na OSVČ, návrat z rodičovské. Pojistná částka pro pracovní neschopnost a invaliditu se odvíjí od příjmu.
 - **Přišel dopis o zdražení.** Pojišťovny zdražují u starších smluv. To je dobrý moment podívat se, jestli za tu cenu dostáváte to, co potřebujete.
 - **Váš poradce skončil.** Smlouvy zůstaly, ale nikdo se o ně nestará. Takovým smlouvám se říká osiřelé a bývají v nejhorším stavu.
