@@ -7,13 +7,13 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort((a, 
 const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 <Base
-  title="Blog – pojištění, hypotéky, investice bez žargonu | Irena Poslušná"
+  title="Blog – pojištění, hypotéky, investice srozumitelně | Irena Poslušná"
   description="Praktické články o rodinných financích: jak často dělat revizi pojištění, jaké pojištění potřebuje rodina s dětmi, co dělat před koncem fixace hypotéky."
 >
   <section class="section section--white">
     <div class="container">
       <span class="eyebrow">Blog</span>
-      <h1>Rodinné finance bez žargonu</h1>
+      <h1>Rodinné finance srozumitelně</h1>
       <p class="lead" style="max-width:720px">Odpovědi na otázky, které mi klienti kladou nejčastěji. Krátce, prakticky a bez odborných pojmů.</p>
       <div class="grid grid--2" style="margin-top:28px">
         {posts.map((p) => (
