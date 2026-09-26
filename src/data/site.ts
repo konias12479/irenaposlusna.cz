@@ -17,7 +17,7 @@ export const site = {
   cnbRegistryUrl: 'https://www.cnb.cz/cnb/jerrs',
   // Doplnit po dodání od eDO compliance:
   cnbNumber: '',   // evidenční číslo v registru ČNB
-  ico: '',         // IČO Ireny
+  ico: '69072248', // IČO Ireny (v registru ČNB vedena jako vázaná zástupkyně od 5. 8. 2026)
   // Formspree (https://formspree.io) – po založení účtu vložit ID formuláře, např. 'xabcdefg'.
   // Dokud je prázdné, formulář odešle e-mail přes poštovního klienta návštěvníka.
   formspreeId: '',
