@@ -39,7 +39,7 @@ export const nav = [
 export const faq = [
   {
     q: 'Kolik stojí schůzka s vámi?',
-    a: 'Nic. První schůzka i následné konzultace jsou bez poplatku. Platíte jen za produkty, které si případně sjednáte, tedy pojistné, splátku nebo investici, stejně jako kdybyste šli přímo do pojišťovny či banky.',
+    a: 'Nic. Žádná schůzka ani konzultace u mě není zpoplatněná, ani první, ani žádná další. Platíte jen za produkty, které si případně sjednáte, tedy pojistné, splátku nebo investici, stejně jako kdybyste šli přímo do pojišťovny či banky.',
   },
   {
     q: 'Jak jste tedy placená?',
@@ -55,7 +55,7 @@ export const faq = [
   },
   {
     q: 'Jak dlouho trvá schůzka a kde se sejdeme?',
-    a: 'První schůzka trvá zhruba hodinu. Sejít se můžeme u vás doma, v kanceláři v Praze 4 (V Parku, u metra Chodov) nebo online přes videohovor. Online zvládneme všechno včetně podpisu. Termín se dá domluvit i navečer.',
+    a: 'Schůzka trvá zhruba hodinu. Sejít se můžeme u vás doma, v kanceláři v Praze 4 (V Parku, u metra Chodov) nebo online přes videohovor. Online zvládneme všechno včetně podpisu. Termín se dá domluvit i navečer.',
   },
   {
     q: 'Co když už mám poradce nebo bankéře?',
