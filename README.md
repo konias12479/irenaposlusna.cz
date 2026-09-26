@@ -22,7 +22,7 @@ npm run dev      # http://localhost:4321
 npm run build    # výstup do dist/
 ```
 
-Každý push do větve `main` automaticky nasadí web (GitHub Actions → GitHub Pages).
+Nasazení: `npm run deploy` sestaví web a nahraje složku `dist/` do větve `gh-pages`, ze které GitHub Pages servíruje web (náhled https://konias12479.github.io, po připojení domény https://irenaposlusna.cz). Zdrojové soubory jsou ve větvi `main` (po změně: `git add -A && git commit -m "..." && git push`). GitHub Actions nepoužíváme, přihlášení GitHub CLI nemá oprávnění `workflow`.
 
 ## Před spuštěním na doméně doplnit v `src/data/site.ts`
 
@@ -35,7 +35,7 @@ A nechat compliance eDO schválit: stránky `/pravni-informace/`, `/ochrana-osob
 
 ## Nasazení domény
 
-1. V repozitáři: Settings → Pages → Source „GitHub Actions"; Custom domain `irenaposlusna.cz`, zaškrtnout Enforce HTTPS (soubor `public/CNAME` už je).
+1. Vytvořit soubor `public/CNAME` s obsahem `irenaposlusna.cz` a spustit `npm run deploy`. V repozitáři na GitHubu: Settings → Pages → Custom domain `irenaposlusna.cz`, zaškrtnout Enforce HTTPS.
 2. U registrátora domény nastavit DNS:
    - `A` záznamy pro `@`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
    - `CNAME` pro `www` → `<github-user>.github.io`
