@@ -22,7 +22,7 @@ npm run dev      # http://localhost:4321
 npm run build    # výstup do dist/
 ```
 
-Nasazení: `npm run deploy` sestaví web a nahraje složku `dist/` do větve `gh-pages`, ze které GitHub Pages servíruje web (náhled https://konias12479.github.io, po připojení domény https://irenaposlusna.cz). Zdrojové soubory jsou ve větvi `main` (po změně: `git add -A && git commit -m "..." && git push`). GitHub Actions nepoužíváme, přihlášení GitHub CLI nemá oprávnění `workflow`.
+Nasazení: `npm run deploy` sestaví web a nahraje složku `dist/` do větve `gh-pages`, ze které GitHub Pages servíruje web na https://irenaposlusna.cz (repozitář `konias12479/irenaposlusna.cz`, dřív `konias12479.github.io`). Zdrojové soubory jsou ve větvi `main` (po změně: `git add -A && git commit -m "..." && git push`). GitHub Actions nepoužíváme, přihlášení GitHub CLI nemá oprávnění `workflow`.
 
 ## Před spuštěním na doméně doplnit v `src/data/site.ts`
 
