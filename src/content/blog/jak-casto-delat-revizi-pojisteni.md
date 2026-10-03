@@ -1,7 +1,7 @@
 ---
 title: "Jak často dělat revizi pojištění? Jednou za rok a při každé změně v rodině"
 description: "Pojistka není smlouva na celý život. Kdy ji otevřít, co v ní zkontrolovat a proč není dobré ji rušit naslepo."
-date: 2026-10-01
+date: 2026-09-01
 ---
 
 Většina lidí otevře svou životní pojistku dvakrát: když ji podepisuje a když se něco stane. Mezi tím uplyne klidně deset let. Za tu dobu se narodí děti, vezme hypotéka, změní práce a příjem. Pojistka zůstane stejná. A pak, v nejhorší chvíli, se ukáže, že kryje něco jiného, než rodina potřebuje.

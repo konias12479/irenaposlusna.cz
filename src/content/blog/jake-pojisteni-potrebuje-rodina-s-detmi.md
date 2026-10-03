@@ -1,7 +1,7 @@
 ---
 title: "Jaké pojištění potřebuje rodina s dětmi? Pět, která ano, a tři, která ne"
 description: "Přehled pro rodiče: co má rodina mít pojištěné, v jakém pořadí a na co zbytečně neutrácet."
-date: 2026-10-08
+date: 2026-09-08
 ---
 
 Když se narodí dítě, dostanete od pojišťoven a bank spoustu nabídek. Většina z nich vypadá rozumně a všechny dohromady stojí majlant. Tady je pořadí, které dává smysl pro běžnou rodinu s hypotékou a jedním až dvěma dětmi. Každá rodina je jiná, ale tohle pořadí platí skoro vždy.
