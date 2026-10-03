@@ -6,7 +6,7 @@ Osobní web finanční poradkyně Ireny Poslušné. Statický web v Astro, hosto
 
 | Co | Soubor |
 |---|---|
-| Kontakty, adresa, ČNB, IČO, adresy pro formulář (FormSubmit), odkaz na recenze | `src/data/site.ts` |
+| Kontakty, adresa, ČNB, IČO, klíč formuláře (Web3Forms), odkaz na recenze | `src/data/site.ts` |
 | Časté otázky (FAQ) | `src/data/site.ts` (pole `faq`) |
 | Texty stránek | `src/pages/*.astro` |
 | Články na blog | `src/content/blog/*.md` (nový článek = nový soubor) |
@@ -28,7 +28,7 @@ Nasazení: `npm run deploy` sestaví web a nahraje složku `dist/` do větve `gh
 
 - `cnbNumber` – evidenční číslo v registru ČNB (od eDO compliance)
 - `ico` – IČO Ireny
-- formulář jede přes FormSubmit (formsubmit.co) na `formTo` s kopií `formCc`; při změně adresy přijde nový aktivační e-mail
+- formulář jede přes Web3Forms (účet irena.poslusna@hotmail.com, klíč `web3formsKey`), kopie na `formCc`
 - `reviewsUrl` – odkaz na Google recenze po založení Firemního profilu
 
 A nechat compliance eDO schválit: stránky `/pravni-informace/`, `/ochrana-osobnich-udaju/`, sekci „Jak jsem placená" na úvodu a FAQ.

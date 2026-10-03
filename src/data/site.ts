@@ -19,8 +19,8 @@ export const site = {
   // Doplnit po dodání od eDO compliance:
   cnbNumber: '',   // evidenční číslo v registru ČNB
   ico: '69072248', // IČO Ireny (v registru ČNB vedena jako vázaná zástupkyně od 5. 8. 2026)
-  // FormSubmit (https://formsubmit.co): formulář posílá na formTo, kopie na formCc. Aktivační e-mail při prvním odeslání přijde na formTo.
-  formTo: 'irena.poslusna@hotmail.com',
+  // Web3Forms (https://web3forms.com): účet irena.poslusna@hotmail.com, zprávy chodí tam, kopie na formCc.
+  web3formsKey: '6fd35f06-7e28-48a2-82bf-db308fb657a2', // veřejný klíč formuláře
   formCc: 'irena.poslusna@edofinance.cz',
   // Formspree (nepoužívá se; ponecháno jako záloha).
   // Dokud je prázdné, formulář odešle e-mail přes poštovního klienta návštěvníka.
