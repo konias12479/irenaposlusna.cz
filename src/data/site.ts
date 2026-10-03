@@ -6,6 +6,7 @@ export const site = {
   phoneDisplay: '721 551 651',
   phoneIntl: '+420721551651',
   email: 'irena.poslusna@edofinance.cz',
+  emailCc: 'irena.poslusna@hotmail.com', // kopie poptávek z formuláře
   // Kancelář eDO. Schůzky probíhají u klientů, v kanceláři nebo online.
   officeName: 'Kancelář eDO Finance&Reality',
   officeStreet: 'V Parku 2335/20',
