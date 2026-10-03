@@ -21,7 +21,7 @@ export const site = {
   ico: '69072248', // IČO Ireny (v registru ČNB vedena jako vázaná zástupkyně od 5. 8. 2026)
   // Web3Forms (https://web3forms.com): účet irena.poslusna@hotmail.com, zprávy chodí tam, kopie na formCc.
   web3formsKey: '6fd35f06-7e28-48a2-82bf-db308fb657a2', // veřejný klíč formuláře
-  formCc: 'irena.poslusna@edofinance.cz',
+  formCc: 'irena.poslusna@edofinance.cz', // kopie: u Web3Forms Free nejde (Pro funkce), řešit pravidlem v Outlooku
   // Formspree (nepoužívá se; ponecháno jako záloha).
   // Dokud je prázdné, formulář odešle e-mail přes poštovního klienta návštěvníka.
   formspreeId: '',
