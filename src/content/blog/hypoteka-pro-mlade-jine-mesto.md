@@ -1,7 +1,8 @@
 ---
 title: "Hypotéka pro mladé v roce 2026: v Praze nedosáhnete, o 100 km dál klidně ano"
-description: "Kolik dnes stojí vlastní byt ve třiceti, co na to pravidla pro mladé do 36 let a kdy dává smysl podívat se po bydlení mimo Prahu."
+description: "Kolik dnes stojí vlastní byt ve třiceti, proč je delší fixace dražší, co na to pravidla pro mladé do 36 let a kdy dává smysl podívat se po bydlení mimo Prahu."
 date: 2026-10-03
+updated: 2026-10-03
 ---
 
 Za poslední rok mi na schůzku přišlo několik párů kolem třicítky se stejnou větou: „Chceme vlastní byt, ale v Praze to nedává smysl." Mají pravdu jen napůl. V Praze to opravdu nevychází skoro nikomu bez pomoci rodiny. Ale Česko není jen Praha a čísla za hranicí Prahy vypadají úplně jinak. Pojďme si to spočítat.
@@ -14,7 +15,17 @@ Pravidla hypoték dnes mladým lidem spíš nahrávají:
 - Banky u lidí do 36 let obvykle tolerují, že splátky všech úvěrů sežerou **až polovinu čistého příjmu**, u starších je to kolem 40 až 45 %.
 - Pozor na jednu změnu z dubna 2026: tahle výhoda platí **jen pro vlastní bydlení**. Kdo kupuje byt na pronájem, dostane maximálně 70 % ceny.
 
-Horší je to se sazbami. Průměrná nabídková sazba se na podzim 2026 pohybuje kolem **5,5 %** a půl roku rostla. Nižší sazbu dostanete za delší fixaci, za pojištění nebo za účet u banky, ale pod 5 % se zatím nikdo nedostane. Počítejte proto s 5,5 % a berte lepší nabídku jako bonus.
+Horší je to se sazbami. Na podzim 2026 začínají nabídky bank u roční fixace kolem **5,5 %** a půl roku rostly. A pozor na jednu věc, která je dnes obráceně, než bývalo zvykem: **delší fixace je dražší, ne levnější.** Banky čekají, že sazby budou klesat, a tak si za jistotu na pět let připlatíte. Pro ilustraci ceník jedné velké banky platný od 2. 10. 2026, při využití všech slev (účet, pojištění):
+
+| Fixace | Sazba od |
+|---|---|
+| 1 rok | 5,49 % |
+| 2 roky | 5,79 % |
+| 3 roky | 5,94 % |
+| 4 roky | 6,09 % |
+| 5 let | 6,29 % |
+
+U pražské hypotéky z tabulky níže dělá rozdíl mezi roční a pětiletou fixací přes 4 000 Kč měsíčně. Slevy za účet u banky, životní pojištění a pojištění nemovitosti dohromady ubírají kolem 0,7 procentního bodu, bez nich jsou sazby ještě vyšší. Pod 5 % se zatím nikdo nedostane. V propočtech proto počítám s 5,5 %.
 
 ## Stejný byt, čtyři města
 
@@ -57,7 +68,7 @@ Nedává to smysl, když vás v Praze drží konkrétní práce s pražským pla
 1. **Nejdřív si spočítat, kolik vám banka reálně půjčí**, ne kolik stojí vysněný byt. Číslo je často jiné, než čekáte, oběma směry.
 2. **Dát si rok na vlastní peníze.** Deset procent ceny je i v regionu několik set tisíc. Pravidelné spoření od prvního platu je jediná cesta, jak je mít.
 3. **Nerozhodovat se jen podle ceny bytu.** Spočítat si celý měsíc: splátka, energie, dojíždění, hlídání dětí. Teprve pak srovnávat města.
-4. **Zafixovat si sazbu na dobu, kterou utáhnete i při zdražení.** Tři až pět let je u dnešních sazeb rozumný kompromis.
+4. **Nefixovat na dlouho, když je dlouhá fixace dražší.** Dnes dává smysl kratší fixace, jeden až tři roky, s tím, že při jejím konci sazbu znovu vyjednáte. Pětiletou jistotu si berte jen tehdy, když víte, že zvýšení splátky o pár tisíc by vás položilo. A vždy si dopředu spočítejte, co se splátkou udělá, kdyby sazba po fixaci vyskočila o jeden až dva body.
 5. **Nekupovat první byt jako investici.** Pravidla pro investiční hypotéky jsou od dubna 2026 přísnější a první byt má být především domov.
 
 Pokud přemýšlíte, jestli na vlastní bydlení dosáhnete a kde, projdeme to spolu. Nepotřebujete žádné podklady, stačí vědět, kolik vyděláváte a kolik máte našetřeno. Výsledek dostanete v číslech, ne v obecných radách.
