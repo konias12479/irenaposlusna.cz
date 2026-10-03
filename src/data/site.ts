@@ -55,7 +55,7 @@ export const faq = [
   },
   {
     q: 'Jak dlouho trvá schůzka a kde se sejdeme?',
-    a: 'Schůzka trvá zhruba hodinu. Sejít se můžeme u vás doma, v kanceláři v Praze 4 (V Parku, u metra Chodov) nebo online přes videohovor. Online zvládneme všechno včetně podpisu. Termín se dá domluvit i navečer.',
+    a: 'Schůzka trvá zhruba hodinu. Sejít se můžeme v kanceláři v Praze 4 (V Parku, u metra Chodov) nebo online přes videohovor. Online zvládneme všechno včetně podpisu. Termín se dá domluvit i navečer.',
   },
   {
     q: 'Co když už mám poradce nebo bankéře?',
