@@ -27,7 +27,7 @@ export const site = {
   formspreeId: '',
   // Google Business Profile – po založení vložit odkaz na recenze (g.page/r/...).
   reviewsUrl: '',
-  responseTime: 'do 24 hodin v pracovní dny',
+  responseTime: 'do 48 hodin v pracovní dny',
   yearsExperience: '10',
 };
 
