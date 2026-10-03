@@ -9,10 +9,10 @@ const faqLd = {
   '@type': 'FAQPage',
   mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 };
-// Bez Formspree se formulář neodesílá na server (action=mailto: hlásí Chrome jako nezabezpečené odeslání),
-// skript níže otevře e-mailového klienta s předvyplněnou zprávou.
-const formAction = site.formspreeId ? `https://formspree.io/f/${site.formspreeId}` : '#';
-const formMethod = site.formspreeId ? 'POST' : 'GET';
+// Formulář odesílá služba FormSubmit (formsubmit.co) na site.formTo s kopií na site.formCc.
+// Při úplně prvním odeslání přijde na site.formTo aktivační e-mail, který je nutné potvrdit.
+const formAction = `https://formsubmit.co/${site.formTo}`;
+const formMethod = 'POST';
 ---
 <Base
   title="Kontakt – Irena Poslušná, finanční poradkyně Praha | nezávazná konzultace"
@@ -52,7 +52,7 @@ const formMethod = site.formspreeId ? 'POST' : 'GET';
       <div>
         <div class="card">
           <h2 style="font-size:1.5rem">Napište mi, s čím potřebujete pomoct</h2>
-          <form class="form" action={formAction} method={formMethod} data-mailto={site.formspreeId ? undefined : site.email} data-cc={site.formspreeId ? undefined : site.emailCc}>
+          <form class="form" action={formAction} method={formMethod}>
             <div>
               <label for="jmeno">Jméno</label>
               <input id="jmeno" name="Jméno" type="text" required autocomplete="name" />
@@ -77,26 +77,15 @@ const formMethod = site.formspreeId ? 'POST' : 'GET';
               <label for="zprava">Zpráva (nepovinné)</label>
               <textarea id="zprava" name="Zpráva" placeholder="Např. Máme dvě starší životní pojistky a hypotéku, chceme vědět, jestli jsme dobře pojištění."></textarea>
             </div>
-            {site.formspreeId && <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />}
-            {site.formspreeId && <input type="hidden" name="_subject" value="Nová poptávka z irenaposlusna.cz" />}
-            {site.formspreeId && <input type="hidden" name="_cc" value={site.emailCc} />}
-            {site.formspreeId && <input type="hidden" name="_next" value={`${site.domain}/dekuji/`} />}
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="_subject" value="Poptávka z webu irenaposlusna.cz" />
+            <input type="hidden" name="_cc" value={site.formCc} />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value={`${site.domain}/dekuji/`} />
             <button class="btn btn--primary btn--lg" type="submit">Odeslat, ozvu se do 24 h</button>
             <p class="form__consent" style="margin:0">Odesláním souhlasíte se zpracováním údajů za účelem vyřízení vaší poptávky. <a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a>.</p>
           </form>
-          <script is:inline>
-            (function () {
-              var f = document.querySelector('form[data-mailto]');
-              if (!f) return;
-              f.addEventListener('submit', function (e) {
-                e.preventDefault();
-                if (!f.reportValidity()) return;
-                var v = function (n) { var el = f.elements[n]; return el ? el.value.trim() : ''; };
-                var body = ['Jméno: ' + v('Jméno'), 'Kontakt: ' + v('Kontakt'), 'Téma: ' + v('Téma'), '', v('Zpráva')].join(String.fromCharCode(10));
-                window.location.href = 'mailto:' + f.dataset.mailto + (f.dataset.cc ? '?cc=' + encodeURIComponent(f.dataset.cc) + '&subject=' : '?subject=') + encodeURIComponent('Poptávka z webu: ' + v('Téma')) + '&body=' + encodeURIComponent(body);
-              });
-            })();
-          </script>
         </div>
         <div class="notice" style="margin-top:16px">
           <strong>Co se stane po odeslání:</strong> {site.responseTime} vám zavolám z čísla {site.phoneDisplay}. Domluvíme se na 15 minutách, nic nepodepisujete a nic nechystáte. Vaše údaje nikomu nepředávám.
