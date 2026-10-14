@@ -9,6 +9,10 @@ const blog = defineCollection({
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     draft: z.boolean().default(false),
+    // Volitelně: vlastní text závěrečné výzvy a patičky článku (jinak výchozí o revizi pojistek)
+    ctaTitle: z.string().optional(),
+    ctaText: z.string().optional(),
+    footnote: z.string().optional(),
   }),
 });
 

@@ -33,8 +33,13 @@ const articleLd = {
       <p class="article-meta">Irena Poslušná, finanční poradkyně · {fmt(post.data.date)}{post.data.updated && ` · aktualizováno ${fmt(post.data.updated)}`}</p>
       <Content />
       <div class="divider"></div>
-      <p class="small muted">Článek je obecná informace, ne konkrétní doporučení. Každá rodina má jinou situaci. Pokud si chcete své smlouvy projít, <a href="/revize-pojisteni/">revize je bez poplatku</a>.</p>
+      {post.data.footnote
+        ? <p class="small muted">{post.data.footnote}</p>
+        : <p class="small muted">Článek je obecná informace, ne konkrétní doporučení. Každá rodina má jinou situaci. Pokud si chcete své smlouvy projít, <a href="/revize-pojisteni/">revize je bez poplatku</a>.</p>}
     </div>
   </article>
-  <Cta title="Chcete si to nechat projít?" text="Pošlete mi fotky smluv nebo zavolejte. Za hodinu budete vědět, jak na tom jste. Bez poplatku a bez závazku." />
+  <Cta
+    title={post.data.ctaTitle ?? 'Chcete si to nechat projít?'}
+    text={post.data.ctaText ?? 'Pošlete mi fotky smluv nebo zavolejte. Za hodinu budete vědět, jak na tom jste. Bez poplatku a bez závazku.'}
+  />
 </Base>
