@@ -6,7 +6,7 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    date: z.coerce.date(),
+    date: z.coerce.date(), // článek s datem v budoucnu se na webu ukáže až při prvním nasazení od toho dne
     updated: z.coerce.date().optional(),
     draft: z.boolean().default(false),
     // Volitelně: vlastní text závěrečné výzvy a patičky článku (jinak výchozí o revizi pojistek)
