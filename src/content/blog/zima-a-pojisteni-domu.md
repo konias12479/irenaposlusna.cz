@@ -1,7 +1,7 @@
 ---
 title: "Praskla trubka, spadl sníh ze střechy. Zaplatí to pojišťovna?"
 description: "Zima je pro pojištění domu a domácnosti nejrizikovější část roku. Kdy pojišťovna platí, kdy se vymlouvá na zanedbanou údržbu a co si zkontrolovat ve smlouvě, než přijdou mrazy."
-date: 2026-11-09
+date: 2026-10-26
 ctaTitle: "Chcete vědět, jestli vás pojistka v zimě podrží?"
 ctaText: "Vyfoťte mi smlouvu na dům nebo domácnost a pošlete ji. Podívám se, na co si dát pozor, a ozvu se."
 footnote: "Každá pojišťovna má jiné podmínky. Článek je obecná informace, rozhoduje vždy vaše konkrétní smlouva."
