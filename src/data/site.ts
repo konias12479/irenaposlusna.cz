@@ -41,35 +41,27 @@ export const nav = [
 
 export const faq = [
   {
-    q: 'Kolik stojí schůzka s vámi?',
-    a: 'Nic. Žádná schůzka ani konzultace u mě není zpoplatněná, ani první, ani žádná další. Platíte jen za produkty, které si případně sjednáte, tedy pojistné, splátku nebo investici, stejně jako kdybyste šli přímo do pojišťovny či banky.',
+    q: 'Kolik stojí schůzka?',
+    a: 'Nic. Žádná schůzka u mě není zpoplatněná. Platíte jen pojistné, splátku nebo vklad, pokud si něco sjednáte, a to stejně, jako kdybyste šli napřímo.',
   },
   {
     q: 'Jak jste tedy placená?',
-    a: 'Provizí od pojišťovny, banky nebo investiční společnosti, a to jen když si u mě něco sjednáte. U pojištění a hypoték za to nic navíc neplatíte, cena je stejná jako napřímo. U některých investic je vstupní poplatek a ten vám vždycky řeknu dopředu, v korunách. Přesnou informaci o mé odměně dostanete písemně před podpisem, ukládá mi to zákon.',
+    a: 'Provizí od pojišťovny nebo banky, a jen když si u mě něco sjednáte. U investic může být vstupní poplatek, ten vždycky řeknu předem v korunách. Přesnou informaci o odměně dostanete písemně před podpisem.',
   },
   {
-    q: 'Musím na první schůzce něco podepsat?',
-    a: 'Nic, čím byste se k něčemu zavazovali. Pokud budeme připravovat konkrétní návrh, zákon po mně chce vyplnit s vámi krátký dotazník a sepsat záznam z jednání. Smlouvu podepisujete, až když si vše v klidu promyslíte. Když řeknete ne, je to v pořádku.',
+    q: 'Musím na schůzce něco podepsat?',
+    a: 'Ne. Návrh si vezmete domů a rozhodnete se v klidu. Když řeknete ne, je to v pořádku.',
   },
   {
     q: 'Jste nezávislá poradkyně?',
-    a: 'V právním smyslu ne a nebudu vám tvrdit opak. Jsem vázaná zástupkyně společnosti eDO Finance&Reality, a.s., zapsaná v registru ČNB. V praxi to znamená, že přes eDO mohu porovnat a nabídnout produkty řady pojišťoven, bank a investičních společností, ne jen jedné firmy. Vybíráme podle toho, co sedí vám.',
+    a: 'Ne, jsem vázaná zástupkyně eDO Finance&Reality, a.s., zapsaná v registru ČNB. Přes eDO ale porovnávám nabídky řady pojišťoven a bank, ne jen jedné.',
   },
   {
-    q: 'Jak dlouho trvá schůzka a kde se sejdeme?',
-    a: 'Schůzka trvá zhruba hodinu. Sejít se můžeme v kanceláři v Praze 4 (V Parku, u metra Chodov) nebo online přes videohovor. Online zvládneme všechno včetně podpisu. Termín se dá domluvit i navečer.',
-  },
-  {
-    q: 'Co když už mám poradce nebo bankéře?',
-    a: 'Nemusíte nic rušit. Klidně mi přineste, co vám navrhli, a já se na to podívám druhým pohledem. Bankéř na pobočce nabízí produkty své banky, já porovnávám víc institucí. Někdy zjistíme, že je vše v pořádku, a i to je dobrá zpráva.',
+    q: 'Kde a jak dlouho se sejdeme?',
+    a: 'Asi na hodinu, v kanceláři v Praze 4 u metra Chodov, nebo online. Termín jde domluvit i navečer.',
   },
   {
     q: 'Mám staré životní pojištění. Mám ho zrušit?',
-    a: 'Rozhodně ne naslepo. Zrušení staré smlouvy může stát peníze a u nové můžete kvůli zdravotnímu stavu dostat horší podmínky. Nejdřív ji spolu projdeme. Často stačí úprava stávající smlouvy a měnit se vyplatí jen tehdy, když vám to prokazatelně pomůže.',
-  },
-  {
-    q: 'Jsem v důchodu nebo jsem OSVČ. Má pro mě smysl se ozvat?',
-    a: 'Určitě. Nejčastěji sice pracuji s rodinami s dětmi, ale pravidelně pomáhám i lidem v důchodu (penze, úspory, pojištění domu a chaty, aby nebyl podpojištěný) a živnostníkům (rezerva na horší měsíce, hypotéka s nepravidelnými příjmy, spoření na penzi).',
+    a: 'Ne naslepo. Starší smlouvy mívají výhody, které nová nedá. Nejdřív ji spolu projdeme a často stačí ji jen upravit.',
   },
 ];

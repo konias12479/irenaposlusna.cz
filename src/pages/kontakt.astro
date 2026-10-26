@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import Faq from '../components/Faq.astro';
-import Steps from '../components/Steps.astro';
 import { site, faq } from '../data/site';
 
 const faqLd = {
@@ -21,9 +20,8 @@ const formMethod = 'POST';
   <section class="section section--white">
     <div class="container two-col">
       <div>
-        <span class="eyebrow">Kontakt</span>
-        <h1>Ozvěte se, konzultace jsou bez poplatku</h1>
-        <p class="lead">Stačí napsat jednou větou, co řešíte. Ozvu se {site.responseTime}.</p>
+        <h1>Ozvěte se</h1>
+        <p class="lead">Stačí jedna věta o tom, co řešíte. Ozvu se {site.responseTime}.</p>
 
         <div class="contact-box">
           <div class="contact-line">
@@ -38,19 +36,15 @@ const formMethod = 'POST';
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
             <div>
               <strong>Kde se sejdeme</strong><br />
-              V kanceláři nebo online přes videohovor. Adresa: {site.officeName}, {site.officeStreet}, {site.officeCity} ({site.officeNote}).
+              V kanceláři {site.officeStreet}, {site.officeCity} ({site.officeNote}), nebo online.
             </div>
-          </div>
-          <div class="btn-row" style="margin-top:8px">
-            <a class="btn btn--primary" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
-            <a class="btn btn--secondary" href={`mailto:${site.email}?subject=${encodeURIComponent('Dotaz z webu')}`}>Napsat e-mail</a>
           </div>
         </div>
       </div>
 
       <div>
         <div class="card">
-          <h2 style="font-size:1.5rem">Napište mi, s čím potřebujete pomoct</h2>
+          <h2 style="font-size:1.5rem">Napište mi</h2>
           <form class="form" action={formAction} method={formMethod}>
             <div>
               <label for="jmeno">Jméno</label>
@@ -74,7 +68,7 @@ const formMethod = 'POST';
             </div>
             <div>
               <label for="zprava">Zpráva (nepovinné)</label>
-              <textarea id="zprava" name="Zpráva" placeholder="Např. Máme dvě starší životní pojistky a hypotéku, chceme vědět, jestli jsme dobře pojištění."></textarea>
+              <textarea id="zprava" name="Zpráva" placeholder="Např. Máme starší životní pojistky a hypotéku. Jsme dobře pojištění?"></textarea>
             </div>
             <input type="hidden" name="access_key" value={site.web3formsKey} />
             <input type="hidden" name="subject" value="Poptávka z webu irenaposlusna.cz" />
@@ -85,24 +79,13 @@ const formMethod = 'POST';
             <p class="form__consent" style="margin:0">Odesláním souhlasíte se zpracováním údajů za účelem vyřízení vaší poptávky. <a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a>.</p>
           </form>
         </div>
-        <div class="notice" style="margin-top:16px">
-          <strong>Co se stane po odeslání:</strong> {site.responseTime} vám zavolám z čísla {site.phoneDisplay}. Domluvíme se na 15 minutách, nic nepodepisujete a nic nechystáte. Vaše údaje nikomu nepředávám.
-        </div>
+        <p class="small muted" style="margin-top:12px">Po odeslání vám zavolám z čísla {site.phoneDisplay}. Vaše údaje nikomu nepředávám.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section--tint">
-    <div class="container">
-      <span class="eyebrow">Postup</span>
-      <h2>Jak spolupráce probíhá</h2>
-      <div style="margin-top:24px"><Steps /></div>
-    </div>
-  </section>
-
-  <section class="section section--white" id="faq">
+  <section class="section section--tint" id="faq">
     <div class="container" style="max-width:860px">
-      <span class="eyebrow">Než zavoláte</span>
       <h2>Časté otázky</h2>
       <div style="margin-top:20px"><Faq /></div>
     </div>
