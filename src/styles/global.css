@@ -271,3 +271,10 @@ strong { font-weight: 700; }
 /* Manrope: čísla stejné šířky v tabulkách, klidnější h3 */
 .prose table, .trustbar, .facts { font-variant-numeric: tabular-nums; }
 h3 { font-weight: 700; letter-spacing: -0.01em; }
+
+/* Menu a tlačítko v hlavičce se nikdy nezalomí na dva řádky */
+.nav a, .header__cta, .brand__name { white-space: nowrap; }
+@media (min-width: 900px) and (max-width: 1080px) {
+  .nav a { padding: 8px 9px; font-size: 0.93rem; }
+  .brand__sub { display: none; }
+}
