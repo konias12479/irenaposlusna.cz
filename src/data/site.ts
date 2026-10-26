@@ -33,7 +33,6 @@ export const site = {
 
 export const nav = [
   { href: '/', label: 'Úvod' },
-  { href: '/revize-pojisteni/', label: 'Revize pojištění' },
   { href: '/sluzby/', label: 'Služby' },
   { href: '/o-mne/', label: 'O mně' },
   { href: '/blog/', label: 'Blog' },

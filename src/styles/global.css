@@ -55,8 +55,8 @@ strong { font-weight: 700; }
 .small { font-size: 0.92rem; }
 .center { text-align: center; }
 .eyebrow {
-  display: inline-block; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--orange-600); margin-bottom: 0.6rem;
+  display: inline-block; font-size: 0.95rem; font-weight: 700; letter-spacing: 0;
+  text-transform: none; color: var(--ink-soft); margin-bottom: 0.4rem;
 }
 
 .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
@@ -74,13 +74,13 @@ strong { font-weight: 700; }
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
-  padding: 0.85em 1.4em; border-radius: 999px; font-weight: 800; text-decoration: none;
+  padding: 0.85em 1.4em; border-radius: 10px; font-weight: 800; text-decoration: none;
   font-size: 1rem; line-height: 1.1; border: 2px solid transparent; cursor: pointer;
   transition: transform .12s ease, background .15s ease, box-shadow .15s ease;
   font-family: var(--font-body);
 }
 .btn:hover { transform: translateY(-1px); }
-.btn--primary { background: var(--orange-500); color: #fff; box-shadow: 0 6px 18px rgba(239,138,43,.35); }
+.btn--primary { background: var(--orange-500); color: #fff; }
 .btn--primary:hover { background: var(--orange-600); color: #fff; }
 .btn--secondary { background: transparent; color: var(--purple-700); border-color: var(--purple-500); }
 .btn--secondary:hover { background: var(--purple-100); color: var(--purple-900); }
@@ -136,8 +136,8 @@ strong { font-weight: 700; }
 .grid--2 { grid-template-columns: 1fr; }
 .grid--3 { grid-template-columns: 1fr; }
 @media (min-width: 720px) { .grid--2 { grid-template-columns: 1fr 1fr; } .grid--3 { grid-template-columns: repeat(3, 1fr); } }
-.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow-sm); }
-.card--accent { border-top: 5px solid var(--orange-500); }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 24px; }
+.card--accent { border-left: 3px solid var(--orange-500); }
 .card--featured { background: var(--purple-700); color: #f3ecfa; border-color: var(--purple-700); }
 .card--featured h3 { color: #fff; }
 .card--featured a:not(.btn) { color: #fff; }
@@ -245,3 +245,25 @@ strong { font-weight: 700; }
   body { font-size: 20px; }
   .hero__photo { max-width: 500px; }
 }
+
+/* ---------- Zjednodušené prvky (méně šablonovitý vzhled) ---------- */
+.text-link { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.text-link--light { color: #fff; }
+.text-link--light:hover { color: #f3ecfa; }
+.facts { margin-top: 1.4rem; color: var(--ink-soft); font-size: 0.95rem; }
+.facts a { color: inherit; }
+.plain-grid { display: grid; gap: 28px; margin-top: 12px; }
+@media (min-width: 820px) { .plain-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+.plain-grid h3 { margin-top: 0.6em; }
+.plain-grid > div { border-top: 2px solid var(--line); padding-top: 8px; }
+.simple-steps { padding-left: 1.4em; margin: 0 0 1em; }
+.simple-steps li { margin-bottom: 0.7em; padding-left: 4px; }
+.simple-steps li::marker { color: var(--orange-600); font-weight: 800; }
+.plain-list { padding-left: 1.2em; }
+.plain-list li { margin-bottom: 0.7em; }
+.post-list { list-style: none; padding: 0; margin: 0 0 1em; }
+.post-list li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.post-list a { font-weight: 700; text-decoration: none; }
+.post-list a:hover { text-decoration: underline; }
+.photo-rounded img { border-radius: 12px; box-shadow: none; }
+.hero__photo img { box-shadow: none; border-radius: 12px; }
