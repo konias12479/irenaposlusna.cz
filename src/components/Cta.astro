@@ -6,22 +6,25 @@ const {
   text = 'Stačí zavolat nebo napsat pár řádků o tom, co řešíte. Sejdeme se v kanceláři v Praze 4 nebo online.',
 } = Astro.props;
 ---
-<section class="cta-band">
-  <div class="cta-band__bg" aria-hidden="true">
-    <picture>
-      <source srcset="/img/irena-poslusna-konzultace-1800.webp" type="image/webp" />
-      <img src="/img/irena-poslusna-konzultace-1200.jpg" width="1200" height="800" alt="" loading="lazy" />
-    </picture>
-  </div>
+<section class="section cta-light">
   <div class="container">
-    <div class="cta-band__inner">
-      <h2>{title}</h2>
-      <p class="lead">{text}</p>
-      <div class="btn-row">
-        <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
-        <a class="btn btn--ghost-light btn--lg" href="/kontakt/">Napište mi</a>
+    <div class="cta-light__box">
+      <div class="cta-light__text">
+        <p class="eyebrow">Další krok</p>
+        <h2>{title}</h2>
+        <p class="lead">{text}</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
+          <a class="btn btn--secondary btn--lg" href="/kontakt/">Napište mi</a>
+        </div>
+        <p class="microcopy">Schůzka nic nestojí. Ozvu se {site.responseTime}.</p>
       </div>
-      <p class="microcopy">Ozvu se {site.responseTime}.</p>
+      <div class="cta-light__photo">
+        <picture>
+          <source srcset="/img/irena-poslusna-portret-800.webp" type="image/webp" />
+          <img src="/img/irena-poslusna-portret-800.jpg" width="800" height="1200" alt="Irena Poslušná, finanční poradkyně Praha" loading="lazy" />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
