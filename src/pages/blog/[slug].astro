@@ -35,11 +35,11 @@ const articleLd = {
       <div class="divider"></div>
       {post.data.footnote
         ? <p class="small muted">{post.data.footnote}</p>
-        : <p class="small muted">Článek je obecná informace, ne konkrétní doporučení. Každá rodina má jinou situaci. Pokud si chcete své smlouvy projít, <a href="/revize-pojisteni/">revize je bez poplatku</a>.</p>}
+        : <p class="small muted">Článek je obecná informace, každá rodina má jinou situaci. Pokud si chcete své smlouvy projít, <a href="/revize-pojisteni/">revize je bez poplatku</a>.</p>}
     </div>
   </article>
   <Cta
     title={post.data.ctaTitle ?? 'Chcete si to nechat projít?'}
-    text={post.data.ctaText ?? 'Pošlete mi fotky smluv nebo zavolejte. Za hodinu budete vědět, jak na tom jste. Bez poplatku a bez závazku.'}
+    text={post.data.ctaText ?? 'Pošlete mi fotky smluv nebo zavolejte. Projdu je a řeknu vám, jak na tom jste. Nic to nestojí.'}
   />
 </Base>

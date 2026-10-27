@@ -7,9 +7,9 @@ ctaText: "Zavolejte nebo napište. Projdeme vaše penzijko, DIP i životní poji
 footnote: "Článek popisuje pravidla platná pro rok 2026 a je obecnou informací, ne daňovým poradenstvím. Investice nesou riziko, hodnota investice může kolísat a minulé výnosy nezaručují budoucí."
 ---
 
-Každý podzim mi volají klienti s podobnou otázkou: „Slyšel jsem, že když teď pošlu peníze na penzijko, vrátí mi stát daně. Kolik mám poslat?" Odpověď zní: záleží na tom, kolik už posíláte. Pro spoustu lidí je to jedna z mála jistých úspor, která jim leží na stole a nevyzvednou si ji. Pojďme si to projít.
+Každý podzim mi volají klienti s podobnou otázkou: „Slyšel jsem, že když teď pošlu peníze na penzijko, vrátí mi stát daně. Kolik mám poslat?" Odpověď zní: záleží na tom, kolik už posíláte. Pro spoustu lidí jsou to jisté peníze, které si každý rok nevyzvednou. Tak si to projdeme.
 
-## Jak to funguje v kostce
+## Jak to funguje
 
 Stát podporuje tři druhy spoření na stáří:
 
@@ -35,7 +35,7 @@ V praxi to vypadá takhle:
 | 3 000 Kč | 4 080 Kč | 15 600 Kč | 2 340 Kč |
 | 5 700 Kč | 4 080 Kč | 48 000 Kč | 7 200 Kč |
 
-Kdo posílá 1 700 Kč, má státní příspěvek naplno, ale na daních zatím nedostává nic. A právě tady je prostor.
+Kdo posílá 1 700 Kč, má státní příspěvek naplno, ale na daních zatím nedostává nic. A tady je ten prostor.
 
 ## Co se dá stihnout ještě letos
 
@@ -58,7 +58,7 @@ Obojí má smysl, každé pro někoho jiného:
 
 ## Nezapomeňte na zaměstnavatele
 
-Pokud vám zaměstnavatel přispívá na penzijko nebo DIP, je to nejvýhodnější peníz vůbec. Příspěvky zaměstnavatele jsou **do 50 000 Kč ročně bez daně a bez odvodů**. Pokud vám zaměstnavatel příspěvek nabízí a vy ho nevyužíváte, zeptejte se na personálním, často stačí jeden formulář.
+Příspěvek zaměstnavatele na penzijko nebo DIP jsou nejvýhodnější peníze, jaké můžete dostat. Příspěvky zaměstnavatele jsou **do 50 000 Kč ročně bez daně a bez odvodů**. Pokud vám zaměstnavatel příspěvek nabízí a vy ho nevyužíváte, zeptejte se na personálním, často stačí jeden formulář.
 
 Příspěvek zaměstnavatele se ale nezapočítává do vašeho odpočtu. Odpočet se počítá jen z toho, co posíláte vy.
 
@@ -74,7 +74,7 @@ Příspěvek zaměstnavatele se ale nezapočítává do vašeho odpočtu. Odpoč
 
 Kdo uzavřel penzijní smlouvu do konce roku 2023, pobírá starobní důchod a od roku 2024 přišel o státní příspěvek, může mít podle novely zákona účinné od 1. srpna 2026 nárok vybrat si úspory včetně dříve připsaných příspěvků. Ti, kdo smlouvu ukončili mezi lednem 2024 a červencem 2026, mohou o dříve připsané státní příspěvky požádat **do 31. ledna 2027**. Podrobnosti se mohou lišit podle penzijní společnosti, proto se zeptejte přímo té své, nebo se ozvěte mně a projdeme to spolu.
 
-## Shrnutí na jednu minutu
+## Shrnutí
 
 1. Posílejte na penzijko aspoň **1 700 Kč měsíčně**, ať máte plný státní příspěvek 340 Kč.
 2. Pokud platíte daň, zvažte do **poloviny prosince mimořádný vklad** na penzijko nebo DIP. Každých 10 000 Kč navíc vám vrátí 1 500 Kč.
@@ -82,4 +82,4 @@ Kdo uzavřel penzijní smlouvu do konce roku 2023, pobírá starobní důchod a 
 4. Neposílejte peníze, které můžete potřebovat dřív než v 60 letech.
 5. Začátkem roku nezapomeňte odevzdat **potvrzení** pro daně.
 
-Pokud si nejste jistí, kolik už posíláte, v jakém fondu máte peníze nebo jestli se vám mimořádný vklad vyplatí, stačí mi poslat výpis ze smlouvy. Spočítám vám to a řeknu na rovinu, jestli má smysl něco měnit.
+Pokud si nejste jistí, kolik už posíláte, v jakém fondu máte peníze nebo jestli se vám mimořádný vklad vyplatí, stačí mi poslat výpis ze smlouvy. Spočítám vám to a řeknu vám, jestli má smysl něco měnit.

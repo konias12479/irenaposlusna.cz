@@ -14,7 +14,7 @@ const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 
     <div class="container">
       <span class="eyebrow">Blog</span>
       <h1>Články o rodinných financích</h1>
-      <p class="lead" style="max-width:720px">Odpovědi na otázky, které mi klienti kladou nejčastěji. Krátce, prakticky a bez odborných pojmů.</p>
+      <p class="lead" style="max-width:720px">Píšu o tom, na co se mě lidé na schůzkách ptají nejčastěji.</p>
       <div class="grid grid--2" style="margin-top:28px">
         {posts.map((p) => (
           <a class="card post-card" href={`/blog/${p.id}/`}>

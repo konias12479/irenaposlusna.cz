@@ -4,13 +4,13 @@ description: "Přehled pro rodiče: co má rodina mít pojištěné, v jakém po
 date: 2026-09-08
 ---
 
-Když se narodí dítě, dostanete od pojišťoven a bank spoustu nabídek. Většina z nich vypadá rozumně a všechny dohromady stojí majlant. Tady je pořadí, které dává smysl pro běžnou rodinu s hypotékou a jedním až dvěma dětmi. Každá rodina je jiná, ale tohle pořadí platí skoro vždy.
+Když se narodí dítě, dostanete od pojišťoven a bank spoustu nabídek. Každá zvlášť vypadá rozumně, dohromady stojí majlant. Sepsala jsem, v jakém pořadí to řešit u běžné rodiny s hypotékou a jedním až dvěma dětmi. Každá rodina je jiná, ale tohle pořadí sedí skoro vždycky.
 
 ## Pět pojištění, která rodina potřebuje
 
 ### 1. Invalidita rodičů
 
-Nejdůležitější a nejčastěji chybějící. Když jeden z rodičů nemůže kvůli nemoci nebo úrazu trvale pracovat, rodina přijde o příjem na desítky let a náklady naopak rostou. Invalidní důchod od státu je nízký. Pojistná částka by měla odpovídat několika ročním příjmům, u hypotéky ještě víc. Pojistit od 2. stupně, ideálně od 1.
+To nejdůležitější, a zároveň to, co nejčastěji chybí. Když jeden z rodičů nemůže kvůli nemoci nebo úrazu trvale pracovat, rodina přijde o příjem na desítky let a náklady naopak rostou. Invalidní důchod od státu je nízký. Pojistná částka by měla odpovídat několika ročním příjmům, u hypotéky ještě víc. Pojistit od 2. stupně, ideálně od 1.
 
 ### 2. Smrt rodiče s hypotékou
 
@@ -36,11 +36,11 @@ Bolestné za zlomenou ruku vyplatí pár tisíc korun, pojistné za to je vzhled
 
 ### Denní dávka za hospitalizaci u dospělých
 
-Několik set korun za den v nemocnici. Zní to hezky, ale pokud máte pořádně pojištěnou pracovní neschopnost a invaliditu, tohle už je jen dražší doplněk.
+Několik set korun za den v nemocnici. Pokud máte pořádně pojištěnou pracovní neschopnost a invaliditu, je to jen dražší doplněk.
 
 ### Investiční složka ve staré životní pojistce
 
-U investičního životního pojištění z let 2005 až 2015 jde často polovina platby do investice s poplatky, které by dnes nikdo neakceptoval. Rušit naslepo ne, ale stojí za to podívat se, kolik z platby jde na krytí rizik a kolik jinam.
+U investičního životního pojištění z let 2005 až 2015 jde často polovina platby do investice s poplatky, na které by dnes nikdo nepřistoupil. Rušit naslepo ne, ale stojí za to podívat se, kolik z platby jde na krytí rizik a kolik jinam.
 
 ## V jakém pořadí to řešit
 
@@ -52,6 +52,6 @@ U investičního životního pojištění z let 2005 až 2015 jde často polovin
 
 ## Kolik to celé stojí
 
-U rodiny se dvěma dětmi a hypotékou se rozumné nastavení všeho výše obvykle vejde do 2 500 až 4 000 Kč měsíčně za oba rodiče, podle věku, zdraví a výše hypotéky. Zní to jako hodně. Většina rodin, které ke mně přijdou, platí podobnou částku už dnes, jen za jiné věci: za drobné úrazy, hospitalizaci a investiční složku, zatímco invalidita je pojištěná na zlomek toho, co by bylo potřeba.
+U rodiny se dvěma dětmi a hypotékou se rozumné nastavení všeho výše obvykle vejde do 2 500 až 4 000 Kč měsíčně za oba rodiče, podle věku, zdraví a výše hypotéky. Je to dost peněz. Ale většina rodin, které ke mně přijdou, platí podobnou částku už dnes, jen za jiné věci: za drobné úrazy, hospitalizaci a investiční složku, zatímco invalidita je pojištěná na zlomek toho, co by bylo potřeba.
 
-Pokud si nejste jistí, jak jste na tom, pošlete mi smlouvy, které máte. Projdu je a řeknu, co je v pořádku, co chybí a za co platíte zbytečně.
+Pokud si nejste jistí, jak jste na tom, pošlete mi smlouvy, které máte. Projdu je a napíšu vám, co bych nechala a co změnila.

@@ -13,41 +13,55 @@ const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 
   title="Irena Poslušná – finanční poradkyně Praha | pojištění rodin, hypotéky, penze"
   description="Finanční poradkyně v Praze. Pomáhám rodinám s pojištěním, hypotékou a spořením. Deset let praxe, schůzka nic nestojí, v kanceláři v Praze 4 i online."
 >
-  <section class="hero">
+  <section class="hero hero--bleed">
     <div class="container hero__grid">
-      <div>
+      <div class="hero__text">
+        <p class="eyebrow">Finanční poradkyně · Praha a okolí</p>
         <h1>Pomáhám rodinám dát do pořádku pojistky a peníze</h1>
-        <p class="lead">Jsem Irena Poslušná a deset let pomáhám lidem v Praze a okolí s pojištěním, hypotékou a spořením. Projdeme spolu, co máte, a řeknu vám, co bych nechala a co změnila.</p>
+        <p class="lead">Deset let pomáhám lidem v Praze a okolí s pojištěním, hypotékou a spořením. Projdeme spolu, co máte, a řeknu vám, co bych nechala a co změnila.</p>
         <div class="btn-row">
           <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
-          <a class="text-link" href="/kontakt/">nebo mi napište</a>
+          <a class="btn btn--secondary btn--lg" href="/kontakt/">Napište mi</a>
         </div>
-        <p class="facts">10 let praxe · stovky klientů · Praha 4 i online · <a href={site.cnbRegistryUrl} target="_blank" rel="noopener">zapsaná v registru ČNB</a></p>
+        <p class="microcopy">Schůzka nic nestojí. Ozvu se {site.responseTime}.</p>
       </div>
-      <div class="hero__photo">
-        <picture>
-          <source srcset="/img/irena-poslusna-portret-800.webp 800w, /img/irena-poslusna-portret-1200.webp 1200w" sizes="(min-width: 900px) 420px, 90vw" type="image/webp" />
-          <img src="/img/irena-poslusna-portret-800.jpg" width="800" height="1200" alt="Irena Poslušná, finanční poradkyně Praha" fetchpriority="high" />
-        </picture>
-      </div>
+    </div>
+    <div class="hero__bleed" aria-hidden="true">
+      <picture>
+        <source srcset="/img/irena-poslusna-konzultace-1800.webp" type="image/webp" />
+        <img src="/img/irena-poslusna-konzultace-1200.jpg" width="1200" height="800" alt="" fetchpriority="high" />
+      </picture>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Základní údaje">
+    <div class="container trust__row">
+      <div><strong>10 let</strong><span>praxe v oboru</span></div>
+      <div><strong>Stovky</strong><span>rodin a klientů</span></div>
+      <div><strong>0 Kč</strong><span>za každou schůzku</span></div>
+      <div><a href={site.cnbRegistryUrl} target="_blank" rel="noopener"><strong>ČNB</strong><span>zapsaná v registru</span></a></div>
     </div>
   </section>
 
   <section class="section section--white">
     <div class="container">
+      <p class="eyebrow">Služby</p>
       <h2>S čím za mnou lidé chodí</h2>
-      <div class="plain-grid">
-        <div>
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3>Pojištění rodiny</h3>
           <p>Projdu smlouvy, které máte doma léta, a řeknu vám, co kryjí a co ne.</p>
           <a class="text-link" href="/revize-pojisteni/">Jak probíhá kontrola pojistek →</a>
         </div>
-        <div>
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
           <h3>Hypotéka</h3>
           <p>Porovnám nabídky bank a pohlídám vám konec fixace.</p>
           <a class="text-link" href="/sluzby/#hypoteky">Víc o hypotékách →</a>
         </div>
-        <div>
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-8"/><path d="M12 13c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 13c0-3-2.5-5-5-5 0 3 2.5 5 5 5z"/><path d="M5 21h14"/></svg></div>
           <h3>Spoření a penze</h3>
           <p>Penzijko, investice, spoření pro děti. Co to stojí, víte vždycky předem.</p>
           <a class="text-link" href="/sluzby/#investice">Víc o spoření →</a>
@@ -59,14 +73,16 @@ const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 
   <section class="section section--tint">
     <div class="container two-col">
       <div>
+        <p class="eyebrow">Postup</p>
         <h2>Jak to u mě probíhá</h2>
-        <ol class="simple-steps">
+        <ol class="steps-cards">
           <li>Zavoláte nebo napíšete, s čím potřebujete pomoct.</li>
           <li>Sejdeme se asi na hodinu, v kanceláři nebo online, a projdeme, co máte.</li>
           <li>Dostanete ode mě návrh a rozhodnete se v klidu doma.</li>
         </ol>
       </div>
       <div>
+        <p class="eyebrow">Odměna</p>
         <h2>Jak jsem placená</h2>
         <p>Za schůzky nic neplatíte. Odměnu mi dává pojišťovna nebo banka, a jen když si u mě něco sjednáte.</p>
         <p>Když je vaše smlouva v pořádku, řeknu vám to.</p>
@@ -75,8 +91,29 @@ const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 
   </section>
 
   <section class="section section--white">
+    <div class="container" style="max-width:900px">
+      <p class="eyebrow">Proč u mě</p>
+      <h2>Co dostanete navíc oproti pobočce</h2>
+      <table class="compare">
+        <thead>
+          <tr><th scope="col">Co řešíme</th><th scope="col">U mě</th><th scope="col">Na pobočce</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Porovnání nabídek více pojišťoven a bank</td><td class="yes">Ano</td><td class="no">Jen jedna</td></tr>
+          <tr><td>Schůzka bez poplatku</td><td class="yes">Ano</td><td class="yes">Ano</td></tr>
+          <tr><td>Písemný přehled pojistek (Semafor)</td><td class="yes">Ano</td><td class="no">Ne</td></tr>
+          <tr><td>Hlídání konce fixace a výročí smluv</td><td class="yes">Ano</td><td class="no">Zřídka</td></tr>
+          <tr><td>Pomoc, když se něco stane a řešíte pojistnou událost</td><td class="yes">Ano</td><td class="no">Infolinka</td></tr>
+          <tr><td>Jeden člověk na všechny smlouvy rodiny</td><td class="yes">Ano</td><td class="no">Ne</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section--white">
     <div class="container two-col two-col--wide" style="align-items:center">
       <div>
+        <p class="eyebrow">O mně</p>
         <h2>Kdo jsem</h2>
         <p>Začínala jsem v Allianz, dnes pracuji jako vázaná zástupkyně {site.company} Porovnávám nabídky víc pojišťoven a bank, ne jen jedné.</p>
         <p>Mám manžela, který mě vždycky podržel, a děti. Vím, jak je důležité, aby se rodina nepoložila, když něco nevyjde.</p>
@@ -94,12 +131,17 @@ const fmt = (d: Date) => d.toLocaleDateString('cs-CZ', { day: 'numeric', month: 
   {latest.length > 0 && (
     <section class="section section--tint">
       <div class="container">
+        <p class="eyebrow">Blog</p>
         <h2>Z blogu</h2>
-        <ul class="post-list">
+        <div class="grid grid--3" style="margin-top:24px;margin-bottom:24px">
           {latest.map((p) => (
-            <li><a href={`/blog/${p.id}/`}>{p.data.title}</a> <span class="muted small">{fmt(p.data.date)}</span></li>
+            <a class="card post-card" href={`/blog/${p.id}/`}>
+              <p class="article-meta" style="margin-bottom:8px">{fmt(p.data.date)}</p>
+              <h3>{p.data.title}</h3>
+              <p class="muted small" style="margin:0">{p.data.description}</p>
+            </a>
           ))}
-        </ul>
+        </div>
         <a class="text-link" href="/blog/">Všechny články →</a>
       </div>
     </section>

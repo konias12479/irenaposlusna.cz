@@ -6,24 +6,22 @@ const {
   text = 'Stačí zavolat nebo napsat pár řádků o tom, co řešíte. Sejdeme se v kanceláři v Praze 4 nebo online.',
 } = Astro.props;
 ---
-<section class="section section--purple">
+<section class="cta-band">
+  <div class="cta-band__bg" aria-hidden="true">
+    <picture>
+      <source srcset="/img/irena-poslusna-konzultace-1800.webp" type="image/webp" />
+      <img src="/img/irena-poslusna-konzultace-1200.jpg" width="1200" height="800" alt="" loading="lazy" />
+    </picture>
+  </div>
   <div class="container">
-    <div class="two-col two-col--wide" style="align-items:center">
-      <div>
-        <h2>{title}</h2>
-        <p class="lead" style="color:#e6dbf2">{text}</p>
-        <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
-          <a class="text-link text-link--light" href="/kontakt/">nebo mi napište</a>
-        </div>
-        <p class="microcopy">Ozvu se {site.responseTime}.</p>
+    <div class="cta-band__inner">
+      <h2>{title}</h2>
+      <p class="lead">{text}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary btn--lg" href={`tel:${site.phoneIntl}`}>Zavolat {site.phoneDisplay}</a>
+        <a class="btn btn--ghost-light btn--lg" href="/kontakt/">Napište mi</a>
       </div>
-      <div class="photo-rounded" style="max-width:320px;justify-self:center">
-        <picture>
-          <source srcset="/img/irena-poslusna-portret-800.webp" type="image/webp" />
-          <img src="/img/irena-poslusna-portret-800.jpg" width="800" height="1200" alt="Irena Poslušná, finanční poradkyně Praha" loading="lazy" style="aspect-ratio:4/5;object-fit:cover;object-position:top" />
-        </picture>
-      </div>
+      <p class="microcopy">Ozvu se {site.responseTime}.</p>
     </div>
   </div>
 </section>

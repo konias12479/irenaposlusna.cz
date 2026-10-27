@@ -5,7 +5,7 @@ date: 2026-10-03
 updated: 2026-10-03
 ---
 
-Za poslední rok mi na schůzku přišlo několik párů kolem třicítky se stejnou větou: „Chceme vlastní byt, ale v Praze to nedává smysl." Mají pravdu jen napůl. V Praze to opravdu nevychází skoro nikomu bez pomoci rodiny. Ale Česko není jen Praha a čísla za hranicí Prahy vypadají úplně jinak. Pojďme si to spočítat.
+Za poslední rok mi na schůzku přišlo několik párů kolem třicítky se stejnou větou: „Chceme vlastní byt, ale v Praze to nedává smysl." Mají pravdu jen napůl. V Praze to bez pomoci rodiny opravdu nevychází skoro nikomu. Ale kousek za Prahou vypadají čísla úplně jinak. Spočítala jsem to.
 
 ## Co se změnilo pro mladé
 
@@ -15,7 +15,7 @@ Pravidla hypoték dnes mladým lidem spíš nahrávají:
 - Banky u lidí do 36 let obvykle tolerují, že splátky všech úvěrů sežerou **až polovinu čistého příjmu**, u starších je to kolem 40 až 45 %.
 - Pozor na jednu změnu z dubna 2026: tahle výhoda platí **jen pro vlastní bydlení**. Kdo kupuje byt na pronájem, dostane maximálně 70 % ceny.
 
-Horší je to se sazbami. Na podzim 2026 začínají nabídky bank u roční fixace kolem **5,5 %** a půl roku rostly. A pozor na jednu věc, která je dnes obráceně, než bývalo zvykem: **delší fixace je dražší, ne levnější.** Banky čekají, že sazby budou klesat, a tak si za jistotu na pět let připlatíte. Pro ilustraci ceník jedné velké banky platný od 2. 10. 2026, při využití všech slev (účet, pojištění):
+Horší je to se sazbami. Na podzim 2026 začínají nabídky bank u roční fixace kolem **5,5 %** a půl roku rostly. A jedna věc je dnes naopak, než jsme byli zvyklí: **delší fixace vychází dráž než kratší.** Banky čekají, že sazby budou klesat, a tak si za jistotu na pět let připlatíte. Pro ilustraci ceník jedné velké banky platný od 2. 10. 2026, při využití všech slev (účet, pojištění):
 
 | Fixace | Sazba od |
 |---|---|
@@ -40,7 +40,7 @@ Vezměme obyčejný byt 2+kk, 55 metrů čtverečních, hypotéka na 90 % ceny, 
 
 \* Při splátkách do 45 % čistého příjmu a bez dalších úvěrů. Jde o orientační výpočet, ne o nabídku banky.
 
-Ten rozdíl není o pár procent. V Praze potřebujete téměř milion v hotovosti a dva nadprůměrné platy. V Ústí stačí tři sta tisíc a jeden slušný plat. Mezi tím leží desítky měst, kde se dá bydlet za polovinu pražské ceny: Kladno, Kolín, Mladá Boleslav, Pardubice, Hradec Králové, Plzeň.
+V Praze potřebujete skoro milion v hotovosti a dva nadprůměrné platy. V Ústí stačí tři sta tisíc a jeden slušný plat. Mezi tím leží desítky měst, kde se dá bydlet za polovinu pražské ceny: Kladno, Kolín, Mladá Boleslav, Pardubice, Hradec Králové, Plzeň.
 
 ## Kdy jiné město dává smysl
 
@@ -51,9 +51,9 @@ Stěhovat se za levnějším bytem není pro každého. Dává to smysl, když p
 - **Chcete děti během pár let.** Rodičovská je v Praze se splátkou 46 tisíc noční můra. Se splátkou 20 tisíc se dá přežít i na jednom příjmu.
 - **Nemáte rodinu, která přispěje milionem.** Bez toho je pražská hypotéka pro většinu třicátníků matematicky mimo.
 
-Nedává to smysl, když vás v Praze drží konkrétní práce s pražským platem a každé ráno v autě by vás stálo dvě hodiny života. Ušetřená splátka pak zmizí v benzínu, dálniční známce a únavě.
+Nedává to smysl, když vás v Praze drží konkrétní práce s pražským platem a dojížděli byste každý den dvě hodiny. Co ušetříte na splátce, projedete v benzínu a odsedíte v koloně.
 
-## Na co si dát pozor, než se nadchnete
+## Na co si dát pozor
 
 **Levné regiony zdražují rychleji než Praha.** Byty v Ústí a Ostravě podražily za tři roky o více než 65 %. Kdo tam koupil v roce 2023, udělal dobře. Kdo kupuje dnes, kupuje už po velké vlně. Neznamená to, že je pozdě, ale neplánujte s tím, že byt za pár let prodáte s velkým ziskem.
 
@@ -61,14 +61,14 @@ Nedává to smysl, když vás v Praze drží konkrétní práce s pražským pla
 
 **Starší domy, vyšší náklady.** Levný byt v panelovém domě z osmdesátých let může mít fond oprav, který vás překvapí. Před koupí chtějte vidět účetnictví společenství vlastníků, ne jen fotky.
 
-**Hypotéka není jen splátka.** Pojištění nemovitosti, pojištění schopnosti splácet, rezerva na tři měsíce splátek. S tím počítejte předem, ne až po podpisu.
+**K hypotéce patří i další výdaje.** Pojištění nemovitosti, pojištění schopnosti splácet a rezerva aspoň na tři splátky. Počítejte s tím dopředu.
 
-## Co doporučuji mladým, kteří přijdou s touhle otázkou
+## Co radím, když s tím někdo přijde
 
-1. **Nejdřív si spočítat, kolik vám banka reálně půjčí**, ne kolik stojí vysněný byt. Číslo je často jiné, než čekáte, oběma směry.
-2. **Dát si rok na vlastní peníze.** Deset procent ceny je i v regionu několik set tisíc. Pravidelné spoření od prvního platu je jediná cesta, jak je mít.
+1. **Nejdřív si spočítat, kolik vám banka reálně půjčí**, ne kolik stojí vysněný byt. Číslo bývá jiné, než čekáte, někdy vyšší, někdy nižší.
+2. **Dát si rok na vlastní peníze.** Deset procent ceny je i v regionu několik set tisíc. Bez pravidelného spoření je nedáte dohromady.
 3. **Nerozhodovat se jen podle ceny bytu.** Spočítat si celý měsíc: splátka, energie, dojíždění, hlídání dětí. Teprve pak srovnávat města.
 4. **Nefixovat na dlouho, když je dlouhá fixace dražší.** Dnes dává smysl kratší fixace, jeden až tři roky, s tím, že při jejím konci sazbu znovu vyjednáte. Pětiletou jistotu si berte jen tehdy, když víte, že zvýšení splátky o pár tisíc by vás položilo. A vždy si dopředu spočítejte, co se splátkou udělá, kdyby sazba po fixaci vyskočila o jeden až dva body.
 5. **Nekupovat první byt jako investici.** Pravidla pro investiční hypotéky jsou od dubna 2026 přísnější a první byt má být především domov.
 
-Pokud přemýšlíte, jestli na vlastní bydlení dosáhnete a kde, projdeme to spolu. Nepotřebujete žádné podklady, stačí vědět, kolik vyděláváte a kolik máte našetřeno. Výsledek dostanete v číslech, ne v obecných radách.
+Pokud přemýšlíte, jestli na vlastní bydlení dosáhnete a kde, projdeme to spolu. Stačí vědět, kolik vyděláváte a kolik máte našetřeno, žádné papíry nepotřebujete. Spočítám vám to na konkrétních číslech.
