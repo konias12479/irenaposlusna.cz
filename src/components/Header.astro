@@ -26,6 +26,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
     <a href={`mailto:${site.email}`}>{site.email}</a>
   </nav>
 </header>
+<script is:inline src="/js/listovani.js" defer></script>
 <script>
   const btn = document.getElementById('nav-toggle');
   const menu = document.getElementById('nav-mobile');
